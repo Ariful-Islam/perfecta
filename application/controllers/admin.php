@@ -40,7 +40,8 @@ class Admin extends CI_Controller {
 		$this->load->model('contact_model','model');
 		
 		$data = array(
-				'contacts' => $this->model->get_contact_list()
+				'contacts' => $this->model->get_contact_list(),
+				'page_view' => 'contact_list'
 		);
 		
 		$this->load->view('dashboard', $data);

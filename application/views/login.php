@@ -7,7 +7,7 @@
 	<!-- BEGIN HEAD -->
 	<head>
 		<meta charset="utf-8"/>
-		<title>TeamHDN :: Admin</title>
+		<title>ergonomic :: Login</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -44,7 +44,7 @@
 		<!-- BEGIN LOGO -->
 		<div class="logo">
 			<a href="index.html">
-			<img src="<?php echo base_url(); ?>/assets/img/logo_ergonomic.png" alt=""/>
+			<img src="<?php echo base_url(); ?>/assets/images/logo_ergonomic.png" alt=""/>
 			</a>
 		</div>
 		<!-- END LOGO -->
@@ -52,7 +52,7 @@
 		<!-- BEGIN LOGIN -->
 		<div class="content">
 			<!-- BEGIN LOGIN FORM -->
-			<form class="login-form" action="<?php echo base_url();?><?php echo $this->config->item('language_abbr');?>/admin/login" method="post">
+			<form class="login-form" action="<?php echo base_url();?>admin/login" method="post">
 				<h3 class="form-title">Sign In</h3>
 				<div class="alert alert-danger display-hide">
 					<button class="close" data-close="alert"></button>
@@ -77,7 +77,7 @@
 			</form>
 		</div>
 		<div class="copyright">
-			2014 © TeamHDN. Admin Dashboard
+			2014 © ergonomic. Admin Dashboard
 		</div>
 		<!-- END LOGIN -->
 
