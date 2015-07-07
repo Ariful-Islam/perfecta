@@ -49,12 +49,12 @@
 						<div class="col-lg-12">
 							<div class="col-lg-6">
 								<div class="col-lg-12 shoes_main">
-									<img class="img-responsive" src="<?php echo base_url(); ?>assets/images/shoes_main.png" alt=""/>
+									<img class="img-responsive img-main" src="<?php echo base_url(); ?>assets/images/shoes_main.png" alt=""/>
 								</div>
 								<div class="col-lg-12 sub_img">
-									<a href="#"><img  class="img-responsive" src="<?php echo base_url(); ?>assets/images/shoes_1st.png" alt=""/></a>
-									<a href="#"><img  class="img-responsive" src="<?php echo base_url(); ?>assets/images/shoes_2nd.png" alt=""/></a>
-									<a href="#"><img  class="img-responsive" src="<?php echo base_url(); ?>assets/images/shoes_3rd.png" alt=""/></a>
+									<a href="#"><img  class="img-responsive img-thumb" src="<?php echo base_url(); ?>assets/images/shoes_main.png" alt=""/></a>
+									<a href="#"><img  class="img-responsive img-thumb" src="<?php echo base_url(); ?>assets/images/shoes_2nd.png" alt=""/></a>
+									<a href="#"><img  class="img-responsive img-thumb" src="<?php echo base_url(); ?>assets/images/shoes_3rd.png" alt=""/></a>
 								</div>
 							</div>
 							<div class="col-lg-6 product_details">

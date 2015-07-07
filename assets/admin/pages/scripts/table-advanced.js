@@ -134,7 +134,7 @@ var TableAdvanced = function () {
 
             "tableTools": {
                 "sSwfPath": "../../assets/global/plugins/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf",
-                "aButtons": [{
+                "aButtons": [/*{
                     "sExtends": "pdf",
                     "sButtonText": "PDF"
                 }, {
@@ -151,7 +151,7 @@ var TableAdvanced = function () {
                 }, {
                     "sExtends": "copy",
                     "sButtonText": "Copy"
-                }]
+                }*/]
             }
         });
 

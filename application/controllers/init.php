@@ -14,7 +14,7 @@ class Init extends CI_Controller {
 	{
 		$this->load->dbforge();
 		
-		$fields = array(
+		/*$fields = array(
 				'id' 				=> array(
 										'type' => 'INT',
 										'constraint' => 11, 
@@ -74,7 +74,103 @@ class Init extends CI_Controller {
 		
 		$this->dbforge->add_field($fields_user);
 		$this->dbforge->add_key('id',TRUE);
-		$this->dbforge->create_table('user');
+		$this->dbforge->create_table('user'); 
+		
+		
+		$Cfield = array(
+				'id' 				=> array(
+										'type' => 'INT',
+										'constraint' => 11, 
+										'auto_increment' => TRUE
+									),
+				'parent_id' 		=> array(
+										'type' => 'INT',
+										'constraint' => 11,
+										'null' => TRUE
+									),
+				'category' 			=> array(
+										'type' => 'VARCHAR',
+										'constraint' => '200'
+									),
+				'created_at' 		=> array(
+										'type' => 'TIMESTAMP'
+									),
+				'updated_at' 		=> array(
+										'type' => 'TIMESTAMP'
+									),
+		);
+		
+		$this->dbforge->add_field($Cfield);
+		$this->dbforge->add_key('id',TRUE);
+		$this->dbforge->create_table('category');
+		
+		
+		$Pfield = array(
+				'id' 				=> array(
+										'type' => 'INT',
+										'constraint' => 11, 
+										'auto_increment' => TRUE
+									),
+				'title' 			=> array(
+										'type' => 'VARCHAR',
+										'constraint' => '200'
+									),
+				'features' 			=> array(
+										'type' => 'VARCHAR',
+										'constraint' => '2000'
+									),
+				'description' 		=> array(
+										'type' => 'VARCHAR',
+										'constraint' => '2000'
+									),
+				'price' 			=> array(
+										'type' => 'FLOAT'
+									),
+				'category_id' 		=> array(
+										'type' => 'VARCHAR',
+										'constraint' => '200'
+									),
+				'archive' 			=> array(
+										'type' => 'TINYINT',
+										'constraint' => 4
+									),
+				'created_at' 		=> array(
+										'type' => 'TIMESTAMP'
+									),
+				'updated_at' 		=> array(
+										'type' => 'TIMESTAMP'
+									),
+		);
+		
+		$this->dbforge->add_field($Pfield);
+		$this->dbforge->add_key('id',TRUE);
+		$this->dbforge->create_table('product'); */
+		
+		$Ifield = array(
+				'id' 				=> array(
+										'type' => 'INT',
+										'constraint' => 11, 
+										'auto_increment' => TRUE
+									),
+				'product_id' 		=> array(
+										'type' => 'INT',
+										'constraint' => 11
+									),
+				'image' 			=> array(
+										'type' => 'VARCHAR',
+										'constraint' => '200'
+									),
+				'created_at' 		=> array(
+										'type' => 'TIMESTAMP'
+									),
+				'updated_at' 		=> array(
+										'type' => 'TIMESTAMP'
+									)
+		);
+		
+		$this->dbforge->add_field($Ifield);
+		$this->dbforge->add_key('id',TRUE);
+		$this->dbforge->create_table('product_image');
 	}
 }
 

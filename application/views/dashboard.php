@@ -37,7 +37,13 @@ License: You must have a valid license purchased only from themeforest(the above
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/global/plugins/datatables/extensions/Scroller/css/dataTables.scroller.min.css"/>
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/global/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.min.css"/>
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css"/>
 <!-- END PAGE LEVEL STYLES -->
+<!-- BEGIN FILE UPLOAD STYLES -->
+<link href="<?php echo base_url(); ?>assets/global/plugins/jquery-file-upload/blueimp-gallery/blueimp-gallery.min.css" rel="stylesheet"/>
+<link href="<?php echo base_url(); ?>assets/global/plugins/jquery-file-upload/css/jquery.fileupload.css" rel="stylesheet"/>
+<link href="<?php echo base_url(); ?>assets/global/plugins/jquery-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet"/>
+<!-- END FILE UPLOAD STYLES -->
 <!-- BEGIN THEME STYLES -->
 <link href="<?php echo base_url(); ?>assets/global/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
 <link href="<?php echo base_url(); ?>assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
@@ -92,7 +98,7 @@ License: You must have a valid license purchased only from themeforest(the above
 					<ul class="dropdown-menu dropdown-menu-default">
 						
 						<li>
-							<a href="login.html">
+							<a href="<?php echo base_url();?>admin/do_signout">
 							<i class="icon-key"></i> Log Out </a>
 						</li>
 					</ul>
@@ -101,7 +107,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				<!-- BEGIN QUICK SIDEBAR TOGGLER -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
 				<li class="dropdown dropdown-quick-sidebar-toggler">
-					<a href="javascript:;" class="dropdown-toggle">
+					<a href="<?php echo base_url();?>admin/do_signout" class="dropdown-toggle">
 					<i class="icon-logout"></i>
 					</a>
 				</li>
@@ -153,12 +159,12 @@ License: You must have a valid license purchased only from themeforest(the above
 					</a>
 					<ul class="sub-menu">
 						<li>
-							<a href="ecommerce_products.html">
+							<a href="<?php echo base_url(); ?>product/product_list">
 							<i class="icon-handbag"></i>
 							List</a>
 						</li>
 						<li>
-							<a href="ecommerce_products_edit.html">
+							<a href="<?php echo base_url(); ?>product/product_entry">
 							<i class="icon-pencil"></i>
 							Product Add</a>
 						</li>
@@ -972,6 +978,84 @@ License: You must have a valid license purchased only from themeforest(the above
 </div>
 <!-- END FOOTER -->
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+
+<script id="template-upload" type="text/x-tmpl">
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+    <tr class="template-upload fade">
+        <td>
+            <span class="preview"></span>
+        </td>
+        <td>
+            <p class="name">{%=file.name%}</p>
+            <strong class="error text-danger label label-danger"></strong>
+        </td>
+        <td>
+            <p class="size">Processing...</p>
+            <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar progress-bar-success" style="width:0%;"></div>
+            </div>
+        </td>
+        <td>
+            {% if (!i && !o.options.autoUpload) { %}
+                <button class="btn blue start" disabled>
+                    <i class="fa fa-upload"></i>
+                    <span>Start</span>
+                </button>
+            {% } %}
+            {% if (!i) { %}
+                <button class="btn red cancel">
+                    <i class="fa fa-ban"></i>
+                    <span>Cancel</span>
+                </button>
+            {% } %}
+        </td>
+    </tr>
+{% } %}
+</script>
+<!-- The template to display files available for download -->
+<script id="template-download" type="text/x-tmpl">
+        {% for (var i=0, file; file=o.files[i]; i++) { %}
+            <tr class="template-download fade">
+                <td>
+                    <span class="preview">
+                        {% if (file.thumbnailUrl) { %}
+                            <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" data-gallery><img src="{%=file.thumbnailUrl%}"></a>
+                        {% } %}
+                    </span>
+                </td>
+                <td>
+                    <p class="name">
+                        {% if (file.url) { %}
+                            <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" {%=file.thumbnailUrl?'data-gallery':''%}>{%=file.name%}</a>
+                        {% } else { %}
+                            <span>{%=file.name%}</span>
+                        {% } %}
+                    </p>
+                    {% if (file.error) { %}
+                        <div><span class="label label-success">Success</span> {%=file.name%}</div>
+                    {% } %}
+                </td>
+                <td>
+                    <span class="size">{%=o.formatFileSize(file.size)%}</span>
+                </td>
+                <td>
+                    {% if (file.deleteUrl) { %}
+                        <button class="btn red delete btn-sm" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>
+                            <i class="fa fa-trash-o"></i>
+                            <span>Delete</span>
+                        </button>
+                        <input type="checkbox" name="delete" value="1" class="toggle">
+                    {% } else { %}
+                        <button class="btn yellow cancel btn-sm">
+                            <i class="fa fa-ban"></i>
+                            <span>Cancel</span>
+                        </button>
+                    {% } %}
+                </td>
+            </tr>
+        {% } %}
+    </script>
+
 <!-- BEGIN CORE PLUGINS -->
 <!--[if lt IE 9]>
 <script src="<?php echo base_url(); ?>assets/global/plugins/respond.min.js"></script>
@@ -996,20 +1080,61 @@ License: You must have a valid license purchased only from themeforest(the above
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/global/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/global/plugins/datatables/extensions/Scroller/js/dataTables.scroller.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/global/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
 <!-- END PAGE LEVEL PLUGINS -->
+
+
+
+<!-- BEGIN:File Upload Plugin JS files-->
+<!-- The Templates plugin is included to render the upload/download listings -->
+<script src="<?php echo base_url(); ?>assets/global/plugins/jquery-file-upload/js/vendor/tmpl.min.js"></script>
+<!-- The Load Image plugin is included for the preview images and image resizing functionality -->
+<script src="<?php echo base_url(); ?>assets/global/plugins/jquery-file-upload/js/vendor/load-image.min.js"></script>
+<!-- The Canvas to Blob plugin is included for image resizing functionality -->
+<script src="<?php echo base_url(); ?>assets/global/plugins/jquery-file-upload/js/vendor/canvas-to-blob.min.js"></script>
+<!-- blueimp Gallery script -->
+<script src="<?php echo base_url(); ?>assets/global/plugins/jquery-file-upload/blueimp-gallery/jquery.blueimp-gallery.min.js"></script>
+<!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+<script src="<?php echo base_url(); ?>assets/global/plugins/jquery-file-upload/js/jquery.iframe-transport.js"></script>
+<!-- The basic File Upload plugin -->
+<script src="<?php echo base_url(); ?>assets/global/plugins/jquery-file-upload/js/jquery.fileupload.js"></script>
+<!-- The File Upload processing plugin -->
+<script src="<?php echo base_url(); ?>assets/global/plugins/jquery-file-upload/js/jquery.fileupload-process.js"></script>
+<!-- The File Upload image preview & resize plugin -->
+<script src="<?php echo base_url(); ?>assets/global/plugins/jquery-file-upload/js/jquery.fileupload-image.js"></script>
+<!-- The File Upload validation plugin -->
+<script src="<?php echo base_url(); ?>assets/global/plugins/jquery-file-upload/js/jquery.fileupload-validate.js"></script>
+<!-- The File Upload user interface plugin -->
+<script src="<?php echo base_url(); ?>assets/global/plugins/jquery-file-upload/js/jquery.fileupload-ui.js"></script>
+<!-- The main application script -->
+<!-- The XDomainRequest Transport is included for cross-domain file deletion for IE 8 and IE 9 -->
+<!--[if (gte IE 8)&(lt IE 10)]>
+    <script src="<?php echo base_url(); ?>assets/global/plugins/jquery-file-upload/js/cors/jquery.xdr-transport.js"></script>
+    <![endif]-->
+<!-- END:File Upload Plugin JS files-->
+
+
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 <script src="<?php echo base_url(); ?>assets/global/scripts/metronic.js" type="text/javascript"></script>
 <script src="<?php echo base_url(); ?>assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
 <script src="<?php echo base_url(); ?>assets/admin/layout/scripts/quick-sidebar.js" type="text/javascript"></script>
 <script src="<?php echo base_url(); ?>assets/admin/layout/scripts/demo.js" type="text/javascript"></script>
 <script src="<?php echo base_url(); ?>assets/admin/pages/scripts/table-advanced.js"></script>
+<script src="<?php echo base_url(); ?>assets/admin/pages/scripts/components-editors.js"></script>
+<script src="<?php echo base_url(); ?>assets/admin/pages/scripts/form-fileupload.js"></script>
 <script>
 jQuery(document).ready(function() {       
    Metronic.init(); // init metronic core components
 Layout.init(); // init current layout
 QuickSidebar.init(); // init quick sidebar
 Demo.init(); // init demo features
+FormFileUpload.init();
+ComponentsEditors.init();
+
    TableAdvanced.init();
+   
+   
 });
 </script>
 </body>
