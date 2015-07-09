@@ -144,7 +144,7 @@ class Init extends CI_Controller {
 		
 		$this->dbforge->add_field($Pfield);
 		$this->dbforge->add_key('id',TRUE);
-		$this->dbforge->create_table('product'); */
+		$this->dbforge->create_table('product'); 
 		
 		$Ifield = array(
 				'id' 				=> array(
@@ -170,7 +170,33 @@ class Init extends CI_Controller {
 		
 		$this->dbforge->add_field($Ifield);
 		$this->dbforge->add_key('id',TRUE);
-		$this->dbforge->create_table('product_image');
+		$this->dbforge->create_table('product_image');*/
+		
+		$Ofield = array(
+				'id' 				=> array(
+										'type' => 'INT',
+										'constraint' => 11, 
+										'auto_increment' => TRUE
+									),
+				'product_id' 		=> array(
+										'type' => 'INT',
+										'constraint' => 11
+									),
+				'email' 			=> array(
+										'type' => 'VARCHAR',
+										'constraint' => '200'
+									),
+				'created_at' 		=> array(
+										'type' => 'TIMESTAMP'
+									),
+				'updated_at' 		=> array(
+										'type' => 'TIMESTAMP'
+									)
+		);
+		
+		$this->dbforge->add_field($Ofield);
+		$this->dbforge->add_key('id',TRUE);
+		$this->dbforge->create_table('order');
 	}
 }
 

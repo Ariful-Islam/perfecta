@@ -16,24 +16,35 @@
                 <div class="col-lg-4">
 				<div class="col-lg-12 form_div">
 					<h2 >Product Filter</h2>
-					<form action="" method="">
+					<form action="<?php echo base_url(); ?>work_clothing/clothing" method="post">
 					<div class="form-group">
-					  <label for="sel1">Category</label>
-					  <select class="form-control" id="sel1">
-						<option value="construction">Construction</option>
-						<option value="construction">Construction</option>
-						<option value="construction">Construction</option>
-						<option value="construction">Construction</option>
+					  <label for="category">Category</label>
+					  <select class="form-control category_search" id="category" name="category">
+						<option value="0">Select Category</option>
+						<?php
+						foreach($category as $cat)
+						{
+							$selected = $cat->id==$parent_id?'selected':'';
+							echo "<option ".$selected." value='".$cat->id."'>".$cat->category."</option>";
+						}
+						?>
 					  </select>
 					</div>
 										
 					<div class="form-group">
-					  <label for="sel1">Subcategory </label>
-					  <select class="form-control" id="sel1">
-						<option value="shoes">Shoes</option>
-						<option value="shoes">Shoes</option>
-						<option value="shoes">Shoes</option>
-						<option value="shoes">Shoes</option>
+					  <label for="subcategory">Subcategory </label>
+					  <select class="form-control category_search" id="subcategory" name="subcategory">
+						<option value="0">Select Subcategory</option>
+						<?php
+						if(count($sub_category) > 0)
+						{
+							foreach($sub_category as $cat)
+							{
+								$selected = $cat->id==$sub_category_id?'selected':'';
+								echo "<option ".$selected." value='".$cat->id."'>".$cat->category."</option>";
+							}
+						}
+						?>
 					  </select>
 					</div>					
 					</form>					
@@ -47,56 +58,21 @@
 				</div>
                 <div class="col-lg-8 content_clothing">
 					<div class="col-lg-12">
-						<a href="<?php echo base_url(); ?>shop/single_shop">
+						<?php
+						foreach($products as $product)
+						{
+						?>
+						<a href="<?php echo base_url(); ?>shop/single_shop/<?php echo $product->id; ?>/<?php echo $parent_id; ?>/<?php echo $sub_category_id; ?>">
 						<div class="col-lg-4 product">
-							<h3>45&#8364;</h3>
-							<img src="<?php echo base_url(); ?>assets/images/shoes1.png" alt=""/>
-							<h2>Apollo/S5</h2>
+							<h3><?php echo $product->price; ?>&#8364;</h3>
+							<img height="170" width="202" src="<?php echo base_url(); ?>uploads/<?php echo $product->image; ?>" alt=""/>
+							<h2><?php echo $product->title; ?></h2>
 							<p>Chaussure tige haute</p>
 						</div>
 						</a>
-						<a href="<?php echo base_url(); ?>shop/single_shop">
-						<div class="col-lg-4 product">
-							<h3>32&#8364;</h3>
-							<img src="<?php echo base_url(); ?>assets/images/shoes2.png" alt=""/>
-							<h2>Argus/S1</h2>
-							<p>Chaussure tige haute</p>
-						</div>
-						</a>
-						<a href="<?php echo base_url(); ?>shop/single_shop">
-						<div class="col-lg-4 product">
-							<h3>28&#8364;</h3>
-							<img src="<?php echo base_url(); ?>assets/images/shoes3.png" alt=""/>
-							<h2>Argulus/Ss</h2>
-							<p>Chaussure tige haute</p>
-						</div>
-						</a>
-					</div>
-					<div class="col-lg-12">
-						<a href="<?php echo base_url(); ?>shop/single_shop">
-						<div class="col-lg-4 product">
-							<h3>50&#8364;</h3>
-							<img src="<?php echo base_url(); ?>assets/images/shoes4.png" alt=""/>
-							<h2>Mars/P2</h2>
-							<p>Chaussure tige haute</p>
-						</div>
-						</a>
-						<a href="<?php echo base_url(); ?>shop/single_shop">
-						<div class="col-lg-4 product">
-							<h3>62&#8364;</h3>
-							<img src="<?php echo base_url(); ?>assets/images/shoes5.png" alt=""/>
-							<h2>Mars/P3</h2>
-							<p>Chaussure tige haute</p>
-						</div>
-						</a>
-						<a href="<?php echo base_url(); ?>shop/single_shop">
-						<div class="col-lg-4 product">
-							<h3>25&#8364;</h3>
-							<img src="<?php echo base_url(); ?>assets/images/shoes6.png" alt=""/>
-							<h2>Argo/M2</h2>
-							<p>Chaussure tige haute</p>
-						</div>	
-						</a>
+						<?php
+						}
+						?>						
 					</div>
 					
 					<ul class="pagination">

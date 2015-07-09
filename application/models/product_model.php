@@ -64,5 +64,53 @@ class Product_model extends CI_Model
 		return $return;
 	}
 	
+	public function get_all_products($category, $sub_category)
+	{		
+		//Select table name
+		$table_name = $this->db->dbprefix('product p');
+		
+		//Get contents
+		$this->db->select('p.id, p.title, p.price, p.category_id, i.image')->from($table_name);
+		$this->db->join('(select * from product_image group by product_id) as i', 'i.product_id = p.id', 'left');
+		if($category!=0)
+		{
+			$this->db->where("FIND_IN_SET(".$category.",p.category_id)>0","",FALSE);
+		}
+		if($sub_category!=0)
+		{
+			$this->db->where("FIND_IN_SET(".$sub_category.",p.category_id)>0","",FALSE);
+		}
+		$this->db->where("p.archive","1",FALSE);
+		$return = $this->db->get()->result();
+		
+		return $return;
+	}
+	
+	public function get_product_by_id($id)
+	{		
+		//Select table name
+		$table_name = $this->db->dbprefix('product');
+		
+		//Get contents
+		$this->db->select('*')->from($table_name);
+		$this->db->where("id",$id);
+		$return = $this->db->get()->row();
+		
+		return $return;
+	}
+	
+	public function get_product_image_by_id($id)
+	{		
+		//Select table name
+		$table_name = $this->db->dbprefix('product_image');
+		
+		//Get contents
+		$this->db->select('*')->from($table_name);
+		$this->db->where("product_id",$id);
+		$return = $this->db->get()->result();
+		
+		return $return;
+	}
+	
 }
 ?>

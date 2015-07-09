@@ -16,24 +16,35 @@
                 <div class="col-lg-4">
 				<div class="col-lg-12 form_div">
 					<h2 >Product Filter</h2>
-					<form action="" method="">
+					<form action="<?php echo base_url(); ?>work_clothing/clothing" method="post">
 					<div class="form-group">
-					  <label for="sel1">Category</label>
-					  <select class="form-control" id="sel1">
-						<option value="construction">Construction</option>
-						<option value="construction">Construction</option>
-						<option value="construction">Construction</option>
-						<option value="construction">Construction</option>
+					  <label for="category">Category</label>
+					  <select class="form-control category_search" id="category" name="category">
+						<option value="0">Select Category</option>
+						<?php
+						foreach($category as $cat)
+						{
+							$selected = $cat->id==$parent_id?'selected':'';
+							echo "<option ".$selected." value='".$cat->id."'>".$cat->category."</option>";
+						}
+						?>
 					  </select>
 					</div>
 										
 					<div class="form-group">
-					  <label for="sel1">Subcategory </label>
-					  <select class="form-control" id="sel1">
-						<option value="shoes">Shoes</option>
-						<option value="shoes">Shoes</option>
-						<option value="shoes">Shoes</option>
-						<option value="shoes">Shoes</option>
+					  <label for="subcategory">Subcategory </label>
+					  <select class="form-control category_search" id="subcategory" name="subcategory">
+						<option value="0">Select Subcategory</option>
+						<?php
+						if(count($sub_category) > 0)
+						{
+							foreach($sub_category as $cat)
+							{
+								$selected = $cat->id==$sub_category_id?'selected':'';
+								echo "<option ".$selected." value='".$cat->id."'>".$cat->category."</option>";
+							}
+						}
+						?>
 					  </select>
 					</div>					
 					</form>					
@@ -49,39 +60,68 @@
 						<div class="col-lg-12">
 							<div class="col-lg-6">
 								<div class="col-lg-12 shoes_main">
-									<img class="img-responsive img-main" src="<?php echo base_url(); ?>assets/images/shoes_main.png" alt=""/>
+									<?php 
+									foreach($product_images as $image)
+									{
+									?>
+									<img class="img-responsive img-main" src="<?php echo base_url(); ?>uploads/<?php echo $image->image; ?>" alt=""/>
+									<?php
+									break;
+									}
+									?>
 								</div>
 								<div class="col-lg-12 sub_img">
-									<a href="#"><img  class="img-responsive img-thumb" src="<?php echo base_url(); ?>assets/images/shoes_main.png" alt=""/></a>
-									<a href="#"><img  class="img-responsive img-thumb" src="<?php echo base_url(); ?>assets/images/shoes_2nd.png" alt=""/></a>
-									<a href="#"><img  class="img-responsive img-thumb" src="<?php echo base_url(); ?>assets/images/shoes_3rd.png" alt=""/></a>
+									<?php 
+									foreach($product_images as $image)
+									{
+									?>
+									<a href="javascript:;"><img  class="img-responsive img-thumb" src="<?php echo base_url(); ?>uploads/<?php echo $image->image; ?>" alt=""/></a>
+									<?php
+									}
+									?>
 								</div>
 							</div>
 							<div class="col-lg-6 product_details">
-								<h2>Argus/S1<span> 32&#8364;</span></h2>
-								<a href="#"><button>Order Online</button></a>
+								<h2><?php echo $product->title; ?><span> <?php echo $product->price; ?>&#8364;</span></h2>
+								<button type="button" data-toggle="modal" data-target=".order_online">Order Online</button>
 								<h3>Features</h3>
-								<ul>
-									<li>Full leather upper</li>
-									<li>Waterproof and breathable bootie membrane</li>
-									<li>Compact safety toe</li>
-									<li>Compression molded, impact absorbing midsole</li>
-									<li>i-shield technology repels dirt and liquids</li>
-								</ul>
+								<?php echo $product->features; ?>
 							</div>
 							
 						</div>
 						<div class="col-lg-12 product_description">
 							<h3>Product Description</h3>
-							<p>Get the job done with the Argus / S1 work boot. This hard-working boot features a durable leather upper with gusseted tongue as an added barrier against water and oil. </p>
-							<p><b>An ASTM</b> rated composite safety toe and electrical hazard protection offer peace of mind. The <b>M-P.A.C.T</b> contoured footbed with memory foam wicks moisture and absorbs shock. The slip-resistant, flexible rubber sole with toe traction, heel brake zones and ladder grips of the Argus / S1 utility boot delivers a confident footing with every step. </p>
-							<p>Bonus; this boot comes with a back up pair of laces too.</p>
+							<p><?php echo $product->description; ?></p>
 						</div>				
 					</div>
 				</div>
             </div>
         </div>
     </section>
+	<div class="modal fade order_online" tabindex="-1" role="dialog">
+	  <div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="exampleModalLabel">Order Online</h4>
+			</div>
+			<div class="modal-body">
+				<div class="form-group for_h">
+					<label for="recipient-name" class="control-label">Please enter your email / phone number:</label>
+					<input type="text" class="form-control" id="recipient-name">
+					<input type="hidden" class="form-control" id="product_id" value="<?php echo $product_id; ?>">
+				</div>
+				<div class="form-group hide successs">
+					<label>We have received your order. Our team will contact with you.</label>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" id="mail_to_admin" class="btn btn-primary">Send message</button>
+			</div>
+		</div>
+	  </div>
+	</div>
 	<section class="footer_contact">
 		<div class="container">
             <div class="row">

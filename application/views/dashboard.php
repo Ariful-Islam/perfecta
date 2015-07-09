@@ -171,6 +171,26 @@ License: You must have a valid license purchased only from themeforest(the above
 					</ul>
 				</li>
 				
+				<li>
+					<a href="javascript:;">
+					<i class="fa fa-cubes"></i>
+					<span class="title">Category</span>
+					<span class="arrow "></span>
+					</a>
+					<ul class="sub-menu">
+						<li>
+							<a href="<?php echo base_url(); ?>category/category_list">
+							<i class="icon-handbag"></i>
+							List</a>
+						</li>
+						<li>
+							<a href="<?php echo base_url(); ?>category/category_entry">
+							<i class="icon-pencil"></i>
+							Category Add</a>
+						</li>
+					</ul>
+				</li>
+				
 				<!-- BEGIN ANGULARJS LINK -->
 				<li class="tooltips" data-container="body" data-placement="right" data-html="true" data-original-title="AngularJS version demo">
 					<a href="angularjs" target="_blank">

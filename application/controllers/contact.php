@@ -32,7 +32,7 @@ class Contact extends CI_Controller {
 		{
 			$this->send_email('cc@ergonomic.be', $this->input->post('contact__name'), $this->input->post('contact__phone'), $this->input->post('contact__mail'), $this->input->post('contact__message'), $this->input->post('contact__company'));
 			$this->session->set_userdata('show','yes');
-			redirect(base_url().'#contact');
+			redirect(base_url().'contact');
 		}
 	}
 	

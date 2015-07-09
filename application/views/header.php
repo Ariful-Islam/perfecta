@@ -60,7 +60,7 @@
                         <a href="<?php echo base_url(); ?>" class="<?php echo $page=='home'?'active':''; ?>">Home</a>
                     </li>
                     <li>
-                        <a href="<?php echo base_url(); ?>work_clothing" class="<?php echo $page=='work'?'active':''; ?>">Work Clothing</a>
+                        <a href="<?php echo base_url(); ?>work_clothing/clothing" class="<?php echo $page=='work'?'active':''; ?>">Work Clothing</a>
                     </li>
                     <li>
                         <a href="<?php echo base_url(); ?>shop/our_shop" class="<?php echo $page=='shop'?'active':''; ?>">Our Shop</a>
