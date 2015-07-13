@@ -36,6 +36,24 @@ class Contact extends CI_Controller {
 		}
 	}
 	
+	public function contact_list()
+	{
+		if(!$this->session->userdata('user_email'))
+		{
+			redirect('admin');
+			return false;
+		}
+		
+		$this->load->model('contact_model','model');
+		
+		$data = array(
+				'contacts' => $this->model->get_contact_list(),
+				'page_view' => 'contact_list'
+		);
+		
+		$this->load->view('dashboard', $data);
+	}
+	
 	public function delete_message()
 	{
 		// Load model

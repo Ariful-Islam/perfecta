@@ -2,6 +2,24 @@
 
 class Order extends CI_Controller {
 
+	public function order_list()
+	{
+		if(!$this->session->userdata('user_email'))
+		{
+			redirect('admin');
+			return false;
+		}
+		
+		$this->load->model('order_model','model');
+		
+		$data = array(
+				'orders' => $this->model->get_order_list(),
+				'page_view' => 'order_list'
+		);
+		
+		$this->load->view('dashboard', $data);
+	}
+	
 	public function order_online()
 	{
 		// Load model
@@ -32,7 +50,7 @@ class Order extends CI_Controller {
 	
 		$body = "I would like to buy the product with ID : ".$product_id;
 		$body .= ". Following is the details:<br /> Email: ".$client_email;
-		$body .= "<br /> Product ID: ".$product_id;
+		$body .= "<br /> Product Link: ".base_url()."/shop/single_shop/".$product_id."/0/0";
 	
 		$data = array(
 				'intro' => "Dear Admin",

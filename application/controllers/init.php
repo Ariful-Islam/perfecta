@@ -10,9 +10,25 @@ class Init extends CI_Controller {
 		$this->load->view('home',$data);
 	}
 	
+	public function set_language($language, $path)
+	{
+		$this->session->set_userdata('sitelang',$language);
+		$lang_abbr = $language=="english"?"en":"nl";
+		$this->session->set_userdata('lang_abbr',$lang_abbr);
+		redirect($path);
+	}
+	
+	public function add_user()
+	{
+		$this->load->model('product_model');
+		$this->product_model->add_user();
+	}
+	
 	public function import_database()
 	{
 		$this->load->dbforge();
+		
+		$this->dbforge->drop_table('product');
 		
 		/*$fields = array(
 				'id' 				=> array(
@@ -66,7 +82,7 @@ class Init extends CI_Controller {
 								'type' => 'VARCHAR',
 								'constraint' => '200'
 							),
-				'password'=> array(
+				'password'	=> array(
 								'type' => 'VARCHAR',
 								'constraint' => '400'
 							),
@@ -102,7 +118,7 @@ class Init extends CI_Controller {
 		
 		$this->dbforge->add_field($Cfield);
 		$this->dbforge->add_key('id',TRUE);
-		$this->dbforge->create_table('category');
+		$this->dbforge->create_table('category');*/
 		
 		
 		$Pfield = array(
@@ -114,14 +130,6 @@ class Init extends CI_Controller {
 				'title' 			=> array(
 										'type' => 'VARCHAR',
 										'constraint' => '200'
-									),
-				'features' 			=> array(
-										'type' => 'VARCHAR',
-										'constraint' => '2000'
-									),
-				'description' 		=> array(
-										'type' => 'VARCHAR',
-										'constraint' => '2000'
 									),
 				'price' 			=> array(
 										'type' => 'FLOAT'
@@ -146,7 +154,7 @@ class Init extends CI_Controller {
 		$this->dbforge->add_key('id',TRUE);
 		$this->dbforge->create_table('product'); 
 		
-		$Ifield = array(
+		/*$Ifield = array(
 				'id' 				=> array(
 										'type' => 'INT',
 										'constraint' => 11, 
@@ -170,7 +178,7 @@ class Init extends CI_Controller {
 		
 		$this->dbforge->add_field($Ifield);
 		$this->dbforge->add_key('id',TRUE);
-		$this->dbforge->create_table('product_image');*/
+		$this->dbforge->create_table('product_image');
 		
 		$Ofield = array(
 				'id' 				=> array(
@@ -196,7 +204,69 @@ class Init extends CI_Controller {
 		
 		$this->dbforge->add_field($Ofield);
 		$this->dbforge->add_key('id',TRUE);
-		$this->dbforge->create_table('order');
+		$this->dbforge->create_table('product_order');*/
+		
+		$Lfield = array(
+				'id' 				=> array(
+										'type' => 'INT',
+										'constraint' => 11,
+										'auto_increment' => TRUE
+									),
+				'language_name' 	=> array(
+										'type' => 'VARCHAR',
+										'constraint' => '100'
+									),
+				'language_abbr' 	=> array(
+										'type' => 'VARCHAR',
+										'constraint' => '10'
+									),
+				'created_at' 		=> array(
+										'type' => 'TIMESTAMP'
+									),
+				'updated_at' 		=> array(
+										'type' => 'TIMESTAMP'
+									)
+		);
+		
+		$this->dbforge->add_field($Lfield);
+		$this->dbforge->add_key('id',TRUE);
+		$this->dbforge->create_table('language');
+		
+		
+		
+		$Tfield = array(
+				'id' 				=> array(
+										'type' => 'INT',
+										'constraint' => 11,
+										'auto_increment' => TRUE
+									),
+				'product_id' 		=> array(
+										'type' => 'INT',
+										'constraint' => 11
+									),
+				'language_id' 		=> array(
+										'type' => 'VARCHAR',
+										'constraint' => '11'
+									),				
+				'features' 			=> array(
+										'type' => 'VARCHAR',
+										'constraint' => '2000'
+									),
+				'description' 		=> array(
+										'type' => 'VARCHAR',
+										'constraint' => '2000'
+									),
+				'created_at' 		=> array(
+										'type' => 'TIMESTAMP'
+									),
+				'updated_at' 		=> array(
+										'type' => 'TIMESTAMP'
+									)
+		);
+		
+		$this->dbforge->add_field($Tfield);
+		$this->dbforge->add_key('id',TRUE);
+		$this->dbforge->create_table('product_translation');
 	}
 }
 

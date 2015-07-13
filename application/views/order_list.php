@@ -1,20 +1,20 @@
 <!-- BEGIN PAGE HEADER-->
 			<h3 class="page-title">
-			Category <small>all category and sub-category list</small>
+			Order <small>all order list</small>
 			</h3>
 			<div class="page-bar">
 				<ul class="page-breadcrumb">
 					<li>
 						<i class="fa fa-home"></i>
-						<a href="<?php echo base_url(); ?>">Home</a>
+						<a href="index.html">Home</a>
 						<i class="fa fa-angle-right"></i>
 					</li>
 					<li>
-						<a href="#">Category</a>
+						<a href="#">Product</a>
 						<i class="fa fa-angle-right"></i>
 					</li>
 					<li>
-						<a href="#">List</a>
+						<a href="#">Order</a>
 					</li>
 				</ul>
 			</div>
@@ -26,7 +26,7 @@
 					<div class="portlet box green-haze">
 						<div class="portlet-title">
 							<div class="caption">
-								<i class="fa fa-list"></i>Category
+								<i class="fa fa-list"></i>Order
 							</div>
 							<div class="tools">
 								<a href="javascript:;" class="collapse">
@@ -37,24 +37,20 @@
 							<table class="table table-striped table-bordered table-hover" id="sample_2">
 							<thead>
 							<tr>
-								<th>ID</th>
-								<th>Category</th>
-								<th>Sub-category</th>
-								<th>Parent</th>
-								<th>Action</th>
+								<th>Product ID</th>
+								<th>Contact Information</th>
+								<th>Order Date</th>
 							</tr>
 							</thead>
 							<tbody>
 							<?php 
-							foreach($categories as $category)
+							foreach($orders as $order)
 							{
 							?>
 							<tr>
-								<td><?php echo $category->id; ?></td>
-								<td><?php echo $category->parent_id==NULL?$category->category:"-"; ?></td>
-								<td><?php echo $category->parent_id!=NULL?$category->category:"-"; ?></td>
-								<td><?php echo $category->parent_category!=""?$category->parent_category:"-"; ?></td>
-								<td align="center"><a href="#" data-id="<?php echo $category->id; ?>" data-link="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/category/delete_category" class="del_msg"><i class="icon-trash"></i></a></td>
+								<td><?php echo $order->product_id; ?></td>
+								<td><?php echo $order->email; ?></td>
+								<td><?php echo $order->created_at; ?></td>
 							</tr>
 							<?php
 							}

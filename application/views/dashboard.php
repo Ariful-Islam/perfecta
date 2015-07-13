@@ -18,7 +18,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN HEAD -->
 <head>
 <meta charset="utf-8"/>
-<title>Metronic | Data Tables - Advanced Datatables</title>
+<title>Ergonomic | Admin Panel</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -51,7 +51,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <link id="style_color" href="<?php echo base_url(); ?>assets/admin/layout/css/themes/default.css" rel="stylesheet" type="text/css"/>
 <link href="<?php echo base_url(); ?>assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
-<link rel="shortcut icon" href="favicon.ico"/>
+<link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/favicon.ico"/>
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -90,15 +90,15 @@ License: You must have a valid license purchased only from themeforest(the above
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
 				<li class="dropdown dropdown-user">
 					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-					<img alt="" class="img-circle" src="<?php echo base_url(); ?>assets/admin/layout/img/avatar3_small.jpg"/>
+					<img alt="" class="img-circle" src="<?php echo base_url(); ?>assets/admin/layout/img/avatar.png"/>
 					<span class="username username-hide-on-mobile">
-					Nick </span>
+					Admin </span>
 					<i class="fa fa-angle-down"></i>
 					</a>
 					<ul class="dropdown-menu dropdown-menu-default">
 						
 						<li>
-							<a href="<?php echo base_url();?>admin/do_signout">
+							<a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/admin/do_signout">
 							<i class="icon-key"></i> Log Out </a>
 						</li>
 					</ul>
@@ -106,11 +106,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				<!-- END USER LOGIN DROPDOWN -->
 				<!-- BEGIN QUICK SIDEBAR TOGGLER -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
-				<li class="dropdown dropdown-quick-sidebar-toggler">
-					<a href="<?php echo base_url();?>admin/do_signout" class="dropdown-toggle">
-					<i class="icon-logout"></i>
-					</a>
-				</li>
+				
 				<!-- END QUICK SIDEBAR TOGGLER -->
 			</ul>
 		</div>
@@ -144,59 +140,64 @@ License: You must have a valid license purchased only from themeforest(the above
 					<!-- END SIDEBAR TOGGLER BUTTON -->
 				</li>
 				<!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
-				<li class="tooltips" data-container="body" data-placement="right" data-html="true" data-original-title="AngularJS version demo">
-					<a href="angularjs" target="_blank">
+				<li class="tooltips" data-container="body" data-placement="right" data-html="true" data-original-title="Dashboard">
+					<a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/admin/dashboard">
 					<i class="icon-home"></i>
 					<span class="title">
-					Dashboard </span>
+					Orders </span>
 					</a>
 				</li>
 				<li>
 					<a href="javascript:;">
-					<i class="icon-basket"></i>
-					<span class="title">Product</span>
-					<span class="arrow "></span>
+						<i class="icon-handbag"></i>
+						<span class="title">Product</span>
+						<span class="arrow "></span>
 					</a>
 					<ul class="sub-menu">
 						<li>
-							<a href="<?php echo base_url(); ?>product/product_list">
-							<i class="icon-handbag"></i>
-							List</a>
+							<a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/product/product_entry">
+							<i class="icon-pencil"></i>
+							Add Product</a>
 						</li>
 						<li>
-							<a href="<?php echo base_url(); ?>product/product_entry">
-							<i class="icon-pencil"></i>
-							Product Add</a>
+							<a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/order/order_list">
+							<i class="icon-basket"></i>
+							Order</a>
+						</li>
+						<li>
+							<a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/product/product_list">
+							<i class="fa fa-list"></i>
+							List</a>
 						</li>
 					</ul>
 				</li>
 				
 				<li>
 					<a href="javascript:;">
-					<i class="fa fa-cubes"></i>
-					<span class="title">Category</span>
-					<span class="arrow "></span>
+						<i class="fa fa-cubes"></i>
+						<span class="title">Categories</span>
+						<span class="arrow "></span>
 					</a>
 					<ul class="sub-menu">
 						<li>
-							<a href="<?php echo base_url(); ?>category/category_list">
-							<i class="icon-handbag"></i>
-							List</a>
+							<a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/category/category_entry">
+							<i class="icon-pencil"></i>
+							Add Category</a>
 						</li>
 						<li>
-							<a href="<?php echo base_url(); ?>category/category_entry">
-							<i class="icon-pencil"></i>
-							Category Add</a>
+							<a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/category/category_list">
+							<i class="icon-handbag"></i>
+							List</a>
 						</li>
 					</ul>
 				</li>
 				
 				<!-- BEGIN ANGULARJS LINK -->
-				<li class="tooltips" data-container="body" data-placement="right" data-html="true" data-original-title="AngularJS version demo">
-					<a href="angularjs" target="_blank">
-					<i class="icon-envelope-open"></i>
-					<span class="title">
-					Contact </span>
+				<li class="tooltips" data-container="body" data-placement="right" data-html="true" data-original-title="Contact List">
+					<a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/contact/contact_list">
+						<i class="icon-envelope-open"></i>
+						<span class="title">
+						Contact </span>
 					</a>
 				</li>
 				
@@ -230,106 +231,6 @@ License: You must have a valid license purchased only from themeforest(the above
 			</div>
 			<!-- /.modal -->
 			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
-			<!-- BEGIN STYLE CUSTOMIZER -->
-			<div class="theme-panel hidden-xs hidden-sm">
-				<div class="toggler">
-				</div>
-				<div class="toggler-close">
-				</div>
-				<div class="theme-options">
-					<div class="theme-option theme-colors clearfix">
-						<span>
-						THEME COLOR </span>
-						<ul>
-							<li class="color-default current tooltips" data-style="default" data-container="body" data-original-title="Default">
-							</li>
-							<li class="color-darkblue tooltips" data-style="darkblue" data-container="body" data-original-title="Dark Blue">
-							</li>
-							<li class="color-blue tooltips" data-style="blue" data-container="body" data-original-title="Blue">
-							</li>
-							<li class="color-grey tooltips" data-style="grey" data-container="body" data-original-title="Grey">
-							</li>
-							<li class="color-light tooltips" data-style="light" data-container="body" data-original-title="Light">
-							</li>
-							<li class="color-light2 tooltips" data-style="light2" data-container="body" data-html="true" data-original-title="Light 2">
-							</li>
-						</ul>
-					</div>
-					<div class="theme-option">
-						<span>
-						Theme Style </span>
-						<select class="layout-style-option form-control input-sm">
-							<option value="square" selected="selected">Square corners</option>
-							<option value="rounded">Rounded corners</option>
-						</select>
-					</div>
-					<div class="theme-option">
-						<span>
-						Layout </span>
-						<select class="layout-option form-control input-sm">
-							<option value="fluid" selected="selected">Fluid</option>
-							<option value="boxed">Boxed</option>
-						</select>
-					</div>
-					<div class="theme-option">
-						<span>
-						Header </span>
-						<select class="page-header-option form-control input-sm">
-							<option value="fixed" selected="selected">Fixed</option>
-							<option value="default">Default</option>
-						</select>
-					</div>
-					<div class="theme-option">
-						<span>
-						Top Menu Dropdown</span>
-						<select class="page-header-top-dropdown-style-option form-control input-sm">
-							<option value="light" selected="selected">Light</option>
-							<option value="dark">Dark</option>
-						</select>
-					</div>
-					<div class="theme-option">
-						<span>
-						Sidebar Mode</span>
-						<select class="sidebar-option form-control input-sm">
-							<option value="fixed">Fixed</option>
-							<option value="default" selected="selected">Default</option>
-						</select>
-					</div>
-					<div class="theme-option">
-						<span>
-						Sidebar Menu </span>
-						<select class="sidebar-menu-option form-control input-sm">
-							<option value="accordion" selected="selected">Accordion</option>
-							<option value="hover">Hover</option>
-						</select>
-					</div>
-					<div class="theme-option">
-						<span>
-						Sidebar Style </span>
-						<select class="sidebar-style-option form-control input-sm">
-							<option value="default" selected="selected">Default</option>
-							<option value="light">Light</option>
-						</select>
-					</div>
-					<div class="theme-option">
-						<span>
-						Sidebar Position </span>
-						<select class="sidebar-pos-option form-control input-sm">
-							<option value="left" selected="selected">Left</option>
-							<option value="right">Right</option>
-						</select>
-					</div>
-					<div class="theme-option">
-						<span>
-						Footer </span>
-						<select class="page-footer-option form-control input-sm">
-							<option value="fixed">Fixed</option>
-							<option value="default" selected="selected">Default</option>
-						</select>
-					</div>
-				</div>
-			</div>
-			<!-- END STYLE CUSTOMIZER -->
 			<?php echo $this->load->view($page_view); ?>
 		</div>
 	</div>
@@ -1100,6 +1001,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/global/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/global/plugins/datatables/extensions/Scroller/js/dataTables.scroller.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/global/plugins/bootstrap-summernote/summernote.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/global/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
 <!-- END PAGE LEVEL PLUGINS -->
@@ -1145,16 +1047,13 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="<?php echo base_url(); ?>assets/admin/pages/scripts/form-fileupload.js"></script>
 <script>
 jQuery(document).ready(function() {       
-   Metronic.init(); // init metronic core components
-Layout.init(); // init current layout
-QuickSidebar.init(); // init quick sidebar
-Demo.init(); // init demo features
-FormFileUpload.init();
-ComponentsEditors.init();
-
-   TableAdvanced.init();
-   
-   
+   	Metronic.init(); // init metronic core components
+	Layout.init(); // init current layout
+	QuickSidebar.init(); // init quick sidebar
+	Demo.init(); // init demo features
+	FormFileUpload.init();
+	ComponentsEditors.init();
+   	TableAdvanced.init();
 });
 </script>
 </body>

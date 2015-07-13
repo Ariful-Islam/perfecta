@@ -4957,3 +4957,110 @@ DEBUG - 2015-07-09 11:17:42 --> Email Class Initialized
 DEBUG - 2015-07-09 11:17:42 --> Language file loaded: language/english/email_lang.php
 DEBUG - 2015-07-09 11:17:42 --> Final output sent to browser
 DEBUG - 2015-07-09 11:17:42 --> Total execution time: 0.4332
+DEBUG - 2015-07-09 11:19:54 --> Config Class Initialized
+DEBUG - 2015-07-09 11:19:54 --> Hooks Class Initialized
+DEBUG - 2015-07-09 11:19:54 --> Utf8 Class Initialized
+DEBUG - 2015-07-09 11:19:54 --> UTF-8 Support Enabled
+DEBUG - 2015-07-09 11:19:54 --> URI Class Initialized
+DEBUG - 2015-07-09 11:19:54 --> Router Class Initialized
+DEBUG - 2015-07-09 11:19:54 --> Output Class Initialized
+DEBUG - 2015-07-09 11:19:54 --> Security Class Initialized
+DEBUG - 2015-07-09 11:19:54 --> Input Class Initialized
+DEBUG - 2015-07-09 11:19:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-07-09 11:19:54 --> Language Class Initialized
+DEBUG - 2015-07-09 11:19:54 --> Loader Class Initialized
+DEBUG - 2015-07-09 11:19:54 --> Helper loaded: url_helper
+DEBUG - 2015-07-09 11:19:55 --> Helper loaded: file_helper
+DEBUG - 2015-07-09 11:19:55 --> Database Driver Class Initialized
+DEBUG - 2015-07-09 11:19:55 --> Session Class Initialized
+DEBUG - 2015-07-09 11:19:55 --> Helper loaded: string_helper
+DEBUG - 2015-07-09 11:19:55 --> Session routines successfully run
+DEBUG - 2015-07-09 11:19:55 --> XML-RPC Class Initialized
+DEBUG - 2015-07-09 11:19:55 --> Controller Class Initialized
+DEBUG - 2015-07-09 11:19:55 --> Model Class Initialized
+DEBUG - 2015-07-09 11:19:55 --> Model Class Initialized
+DEBUG - 2015-07-09 11:19:55 --> Model Class Initialized
+DEBUG - 2015-07-09 11:19:55 --> File loaded: application/views/header.php
+DEBUG - 2015-07-09 11:19:55 --> File loaded: application/views/footer.php
+DEBUG - 2015-07-09 11:19:55 --> File loaded: application/views/work_clothing.php
+DEBUG - 2015-07-09 11:19:55 --> Final output sent to browser
+DEBUG - 2015-07-09 11:19:55 --> Total execution time: 0.3487
+DEBUG - 2015-07-09 11:21:05 --> Config Class Initialized
+DEBUG - 2015-07-09 11:21:05 --> Hooks Class Initialized
+DEBUG - 2015-07-09 11:21:05 --> Utf8 Class Initialized
+DEBUG - 2015-07-09 11:21:05 --> UTF-8 Support Enabled
+DEBUG - 2015-07-09 11:21:05 --> URI Class Initialized
+DEBUG - 2015-07-09 11:21:05 --> Router Class Initialized
+DEBUG - 2015-07-09 11:21:05 --> No URI present. Default controller set.
+DEBUG - 2015-07-09 11:21:05 --> Output Class Initialized
+DEBUG - 2015-07-09 11:21:05 --> Security Class Initialized
+DEBUG - 2015-07-09 11:21:05 --> Input Class Initialized
+DEBUG - 2015-07-09 11:21:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-07-09 11:21:05 --> Language Class Initialized
+DEBUG - 2015-07-09 11:21:05 --> Loader Class Initialized
+DEBUG - 2015-07-09 11:21:05 --> Helper loaded: url_helper
+DEBUG - 2015-07-09 11:21:05 --> Helper loaded: file_helper
+DEBUG - 2015-07-09 11:21:05 --> Database Driver Class Initialized
+DEBUG - 2015-07-09 11:21:05 --> Session Class Initialized
+DEBUG - 2015-07-09 11:21:05 --> Helper loaded: string_helper
+DEBUG - 2015-07-09 11:21:05 --> Session routines successfully run
+DEBUG - 2015-07-09 11:21:05 --> XML-RPC Class Initialized
+DEBUG - 2015-07-09 11:21:05 --> Controller Class Initialized
+DEBUG - 2015-07-09 11:21:05 --> File loaded: application/views/header.php
+DEBUG - 2015-07-09 11:21:05 --> File loaded: application/views/footer.php
+DEBUG - 2015-07-09 11:21:05 --> File loaded: application/views/home.php
+DEBUG - 2015-07-09 11:21:05 --> Final output sent to browser
+DEBUG - 2015-07-09 11:21:05 --> Total execution time: 0.3314
+DEBUG - 2015-07-09 11:21:09 --> Config Class Initialized
+DEBUG - 2015-07-09 11:21:09 --> Hooks Class Initialized
+DEBUG - 2015-07-09 11:21:09 --> Utf8 Class Initialized
+DEBUG - 2015-07-09 11:21:09 --> UTF-8 Support Enabled
+DEBUG - 2015-07-09 11:21:09 --> URI Class Initialized
+DEBUG - 2015-07-09 11:21:09 --> Router Class Initialized
+DEBUG - 2015-07-09 11:21:09 --> Output Class Initialized
+DEBUG - 2015-07-09 11:21:09 --> Security Class Initialized
+DEBUG - 2015-07-09 11:21:10 --> Input Class Initialized
+DEBUG - 2015-07-09 11:21:10 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-07-09 11:21:10 --> Language Class Initialized
+DEBUG - 2015-07-09 11:21:10 --> Loader Class Initialized
+DEBUG - 2015-07-09 11:21:10 --> Helper loaded: url_helper
+DEBUG - 2015-07-09 11:21:10 --> Helper loaded: file_helper
+DEBUG - 2015-07-09 11:21:10 --> Database Driver Class Initialized
+DEBUG - 2015-07-09 11:21:10 --> Session Class Initialized
+DEBUG - 2015-07-09 11:21:10 --> Helper loaded: string_helper
+DEBUG - 2015-07-09 11:21:10 --> Session routines successfully run
+DEBUG - 2015-07-09 11:21:10 --> XML-RPC Class Initialized
+DEBUG - 2015-07-09 11:21:10 --> Controller Class Initialized
+DEBUG - 2015-07-09 11:21:10 --> File loaded: application/views/header.php
+DEBUG - 2015-07-09 11:21:10 --> File loaded: application/views/footer.php
+DEBUG - 2015-07-09 11:21:10 --> File loaded: application/views/our_shop.php
+DEBUG - 2015-07-09 11:21:10 --> Final output sent to browser
+DEBUG - 2015-07-09 11:21:10 --> Total execution time: 0.3534
+DEBUG - 2015-07-09 11:21:23 --> Config Class Initialized
+DEBUG - 2015-07-09 11:21:23 --> Hooks Class Initialized
+DEBUG - 2015-07-09 11:21:24 --> Utf8 Class Initialized
+DEBUG - 2015-07-09 11:21:24 --> UTF-8 Support Enabled
+DEBUG - 2015-07-09 11:21:24 --> URI Class Initialized
+DEBUG - 2015-07-09 11:21:24 --> Router Class Initialized
+DEBUG - 2015-07-09 11:21:24 --> Output Class Initialized
+DEBUG - 2015-07-09 11:21:24 --> Security Class Initialized
+DEBUG - 2015-07-09 11:21:24 --> Input Class Initialized
+DEBUG - 2015-07-09 11:21:24 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-07-09 11:21:24 --> Language Class Initialized
+DEBUG - 2015-07-09 11:21:24 --> Loader Class Initialized
+DEBUG - 2015-07-09 11:21:24 --> Helper loaded: url_helper
+DEBUG - 2015-07-09 11:21:24 --> Helper loaded: file_helper
+DEBUG - 2015-07-09 11:21:24 --> Database Driver Class Initialized
+DEBUG - 2015-07-09 11:21:24 --> Session Class Initialized
+DEBUG - 2015-07-09 11:21:24 --> Helper loaded: string_helper
+DEBUG - 2015-07-09 11:21:24 --> Session routines successfully run
+DEBUG - 2015-07-09 11:21:24 --> XML-RPC Class Initialized
+DEBUG - 2015-07-09 11:21:24 --> Controller Class Initialized
+DEBUG - 2015-07-09 11:21:24 --> Model Class Initialized
+DEBUG - 2015-07-09 11:21:24 --> Model Class Initialized
+DEBUG - 2015-07-09 11:21:24 --> Model Class Initialized
+DEBUG - 2015-07-09 11:21:24 --> File loaded: application/views/header.php
+DEBUG - 2015-07-09 11:21:24 --> File loaded: application/views/footer.php
+DEBUG - 2015-07-09 11:21:24 --> File loaded: application/views/work_clothing.php
+DEBUG - 2015-07-09 11:21:24 --> Final output sent to browser
+DEBUG - 2015-07-09 11:21:24 --> Total execution time: 0.3643

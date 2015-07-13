@@ -3,7 +3,7 @@
     <section class="header_clothing">
 		<div class="container">
             <div class="col-lg-12">
-			<h2>Work Clothing</h2>
+			<h2><?php echo $this->lang->line('common_work_clothing'); ?></h2>
 			</div>
 		</div>
 	</section>
@@ -16,7 +16,7 @@
                 <div class="col-lg-4">
 				<div class="col-lg-12 form_div">
 					<h2 >Product Filter</h2>
-					<form action="<?php echo base_url(); ?>work_clothing/clothing" method="post">
+					<form action="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/work_clothing/clothing" method="post">
 					<div class="form-group">
 					  <label for="category">Category</label>
 					  <select class="form-control category_search" id="category" name="category">
@@ -50,9 +50,9 @@
 					</form>					
 				</div>
 				<div class="col-lg-12 offer">
-					<p>Have a Question?</p>
-					<h2>Want an Offer?</h2>
-					<a href="<?php echo base_url(); ?>contact"><button type="button" class="btn btn-primary active clothing_button"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Contact Us</button></a>
+					<p><?php echo $this->lang->line('common_have_a_question'); ?></p>
+					<h2><?php echo $this->lang->line('common_want_an_offer'); ?></h2>
+					<a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/contact"><button type="button" class="btn btn-primary active clothing_button"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><?php echo $this->lang->line('common_contact_us'); ?></button></a>
 				</div>
 				</div>
                 <div class="col-lg-8 content_clothing">
@@ -103,7 +103,7 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="exampleModalLabel">Order Online</h4>
+				<h4 class="modal-title" id="exampleModalLabel"><?php echo $this->lang->line('common_order_online'); ?></h4>
 			</div>
 			<div class="modal-body">
 				<div class="form-group for_h">
@@ -126,10 +126,10 @@
 		<div class="container">
             <div class="row">
 				<div class="col-lg-9">
-					<h2>Do you have a question or want an offer?</h2>
+					<h2><?php echo $this->lang->line('common_have_a_question'); ?> or <?php echo $this->lang->line('common_want_an_offer'); ?></h2>
 				</div>
 				<div class="col-lg-3">
-						<a href="<?php echo base_url(); ?>contact"><button>Contact Us</button></a>
+						<a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/contact"><button><?php echo $this->lang->line('common_contact_us'); ?></button></a>
 				</div>
 			</div>
 		</div>

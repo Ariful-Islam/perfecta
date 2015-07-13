@@ -35,6 +35,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	
+	<link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/footer_logo.png"/>
 
 </head>
 
@@ -53,20 +55,29 @@
                 </button>
                 <a class="navbar-brand" href="#"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt="Perfecta"/></a>
             </div>
+			
+			
+			
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<!-- <ul class="select-language">
+					<li class="<?php echo $this->config->item('language')=='english'?'active':''; ?>"><a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/init/set_language/english/<?php echo $this->router->class; ?>">EN</a> </li>
+					<li class="<?php echo $this->config->item('language')=='dutch'?'active':''; ?>"><a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/init/set_language/dutch/<?php echo $this->router->class; ?>">NL</a> </li>
+				</ul> --><!-- /select-language -->
+			
                 <ul class="nav navbar-nav">
+					
                     <li>
-                        <a href="<?php echo base_url(); ?>" class="<?php echo $page=='home'?'active':''; ?>">Home</a>
+                        <a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/" class="<?php echo $page=='home'?'active':''; ?>"><?php echo $this->lang->line('common_home'); ?></a>
                     </li>
                     <li>
-                        <a href="<?php echo base_url(); ?>work_clothing/clothing" class="<?php echo $page=='work'?'active':''; ?>">Work Clothing</a>
+                        <a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/work_clothing/clothing" class="<?php echo $page=='work'?'active':''; ?>"><?php echo $this->lang->line('common_work_clothing'); ?></a>
                     </li>
                     <li>
-                        <a href="<?php echo base_url(); ?>shop/our_shop" class="<?php echo $page=='shop'?'active':''; ?>">Our Shop</a>
+                        <a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/shop/our_shop" class="<?php echo $page=='shop'?'active':''; ?>"><?php echo $this->lang->line('common_our_shop'); ?></a>
                     </li>
 					<li>
-                        <a href="<?php echo base_url(); ?>contact" class="<?php echo $page=='contact'?'active':''; ?>">Contact Us</a>
+                        <a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/contact" class="<?php echo $page=='contact'?'active':''; ?>"><?php echo $this->lang->line('common_contact_us'); ?></a>
                     </li>
                 </ul>
             </div>

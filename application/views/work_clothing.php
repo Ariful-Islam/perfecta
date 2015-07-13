@@ -3,7 +3,7 @@
     <section class="header_clothing">
 		<div class="container">
             <div class="col-lg-12">
-			<h2>Work Clothing</h2>
+			<h2><?php echo $this->lang->line('common_work_clothing'); ?></h2>
 			</div>
 		</div>
 	</section>
@@ -15,8 +15,8 @@
             <div class="row">
                 <div class="col-lg-4">
 				<div class="col-lg-12 form_div">
-					<h2 >Product Filter</h2>
-					<form action="<?php echo base_url(); ?>work_clothing/clothing" method="post">
+					<h2 ><?php echo $this->lang->line('common_product_filter'); ?></h2>
+					<form action="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/work_clothing/clothing" method="post">
 					<div class="form-group">
 					  <label for="category">Category</label>
 					  <select class="form-control category_search" id="category" name="category">
@@ -50,10 +50,10 @@
 					</form>					
 				</div>
 				<div class="col-lg-12 offer">
-					<p>Have a Question?</p>
-					<h2>Want an Offer?</h2>
-					<a href="<?php echo base_url(); ?>contact"><button class="contact-button">
-					<i class="icon_mail glyphicon"></i> Contact Us</button></a>
+					<p><?php echo $this->lang->line('common_have_a_question'); ?></p>
+					<h2><?php echo $this->lang->line('common_want_an_offer'); ?></h2>
+					<a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/contact"><button class="contact-button">
+					<i class="icon_mail glyphicon"></i> <?php echo $this->lang->line('common_contact_us'); ?></button></a>
 				</div>
 				</div>
                 <div class="col-lg-8 content_clothing">
@@ -62,7 +62,7 @@
 						foreach($products as $product)
 						{
 						?>
-						<a href="<?php echo base_url(); ?>shop/single_shop/<?php echo $product->id; ?>/<?php echo $parent_id; ?>/<?php echo $sub_category_id; ?>">
+						<a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/shop/single_shop/<?php echo $product->id; ?>/<?php echo $parent_id; ?>/<?php echo $sub_category_id; ?>">
 						<div class="col-lg-4 product">
 							<h3><?php echo $product->price; ?>&#8364;</h3>
 							<img height="170" width="202" src="<?php echo base_url(); ?>uploads/<?php echo $product->image; ?>" alt=""/>
@@ -75,13 +75,7 @@
 						?>						
 					</div>
 					
-					<ul class="pagination">
-					  <li class="active" ><a href="#">1</a></li>
-					  <li><a href="#">2</a></li>
-					  <li><a href="#">3</a></li>
-					  <li><a href="#">4</a></li>
-					  <li><a href="#">5</a></li>
-					</ul>
+					<?php echo $pagination; ?>
 					
 				</div>
             </div>

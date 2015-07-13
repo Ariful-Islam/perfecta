@@ -59,7 +59,26 @@
 				<div class="col-lg-6 contact_form ">
 				<p>Have a Question?</p>
 				<h2>Want An Offer?</h2>
-					<form class="form-inline" role="form" method="post" action="<?php echo base_url(); ?>contact/contact_us">
+					
+					<?php
+						$show = 'hide';
+						if($this->session->userdata('show'))
+						{
+							$show = 'show';
+						}
+						
+						$this->session->unset_userdata('show');
+					?>
+                    <div class="row <?php echo $show; ?>">
+                        <div class="col-xs-12">
+
+                            <!-- contact__title -->
+                            <div class="alert alert-success">Thank you for your email, we'll get back to you asap</div>
+                            <!-- /contact__title -->
+
+                        </div>
+                    </div>
+					<form class="form-inline" role="form" method="post" action="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/contact/contact_us">
 					  <div class="form-group">
 						<input type="text" class="form-control" id="contact__name" name="contact__name" placeholder="Full Name"/>
 
@@ -107,7 +126,7 @@
 					<h2 class="thick-font">Discover Our Work Clothing</h2>
 				</div>
 				<div class="col-lg-3">
-						<a href="#"><button>Browse Our Catalog</button></a>
+						<a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/work_clothing/clothing"><button>Browse Our Catalog</button></a>
 				</div>
 			</div>
 		</div>

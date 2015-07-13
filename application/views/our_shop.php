@@ -3,7 +3,7 @@
     <section class="header_shop">
 		<div class="container">
             <div class="col-lg-12">
-			<h2>Our Shop</h2>
+			<h2><?php echo $this->lang->line('common_our_shop'); ?></h2>
 			</div>
 		</div>
 	</section>
@@ -29,10 +29,10 @@
 		<div class="container">
             <div class="row">
 				<div class="col-lg-9">
-					<h2 class="thick-font">Discover Our Work Clothing</h2>
+					<h2 class="thick-font"><?php echo $this->lang->line('common_discover_our'); ?> <?php echo $this->lang->line('common_work_clothing'); ?></h2>
 				</div>
 				<div class="col-lg-3">
-						<a href="#"><button>Browse Our Catalog</button></a>
+						<a href="#"><button><?php echo $this->lang->line('common_browse_our_catalog'); ?></button></a>
 				</div>
 			</div>
 		</div>

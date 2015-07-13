@@ -30,7 +30,7 @@
 		<link href="<?php echo base_url(); ?>/assets/admin/layout/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/>
 		<link href="<?php echo base_url(); ?>/assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
 		<!-- END THEME STYLES -->
-		<link rel="shortcut icon" href="favicon.ico"/>
+		<link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/favicon.ico"/>
 	</head>
 	<!-- END HEAD -->
 	
@@ -52,7 +52,7 @@
 		<!-- BEGIN LOGIN -->
 		<div class="content">
 			<!-- BEGIN LOGIN FORM -->
-			<form class="login-form" action="<?php echo base_url();?>admin/login" method="post">
+			<form class="login-form" action="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/admin/login" method="post">
 				<h3 class="form-title">Sign In</h3>
 				<div class="alert alert-danger display-hide">
 					<button class="close" data-close="alert"></button>

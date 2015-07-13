@@ -9,7 +9,7 @@
 					<img src="<?php echo base_url(); ?>assets/images/footer_logo.png" alt=""/>
 				</div>
 				<div class="col-lg-4 credit">
-					<p>Website carefully crafted by <a href="">Ergonomic</a></p>
+					<p>Website carefully crafted by <a href="http://www.ergonomic.be">Ergonomic</a></p>
 				</div>
             </div>
             <!-- /.row -->
@@ -18,7 +18,7 @@
     </footer>
 	
 	<script>
-		var BASE_URL = "<?php echo base_url(); ?>";
+		var BASE_URL = "<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/";
 	</script>
 
     <!-- jQuery -->

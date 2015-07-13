@@ -72,9 +72,12 @@ class Product extends CI_Controller {
 	
 	public function product_entry()
 	{
+		$this->load->model('language_model');
+		
 		$data = array(
 				'page_view' => 'product_add_edit',
-				'category'	=> $this->_get_menu_categories()
+				'category'	=> $this->_get_menu_categories(),
+				'language'	=> $this->language_model->get_language()
 		);
 		
 		$this->load->view('dashboard', $data);
@@ -132,8 +135,6 @@ class Product extends CI_Controller {
 		// gathering data
 		$data = array(
 				'title' 				=> $this->input->post('title'),
-				'features'				=> $this->input->post('features'),
-				'description'			=> $this->input->post('description'),
 				'price'					=> $this->input->post('price'),
 				'category_id'			=> implode(',',$this->input->post('category')),
 				'archive'				=> 1
@@ -145,7 +146,38 @@ class Product extends CI_Controller {
 		if($return)
 		{
 			$this->session->set_userdata('product_id',$this->db->insert_id());
-			redirect('product/product_entry/#tab_images');
+			redirect('product/product_entry/#tab_translate');
+		}
+	}
+	
+	public function product_description_add()
+	{
+		// Load model
+		$this->load->model('product_model');
+		
+		$btn = $this->input->post('prd');
+	
+		// gathering data
+		$data = array(
+				'product_id'			=> $this->session->userdata('product_id'),
+				'language_id'			=> $this->input->post('language'),
+				'features'				=> $this->input->post('features'),
+				'description'			=> $this->input->post('description')
+		);
+	
+		// Insert data
+		$return = $this->product_model->add_product_description($data);
+	
+		if($return)
+		{
+			if ($btn == 'save')
+			{
+				redirect('product/product_entry/#tab_translate');
+			}
+			else 
+			{
+				redirect('product/product_entry/#tab_images');
+			}
 		}
 	}
 	

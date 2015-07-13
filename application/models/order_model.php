@@ -18,7 +18,7 @@ class Order_model extends CI_Model
 	public function add_order_details($data) 
 	{
 		//Select table name
-		$table_name = $this->db->dbprefix('order');
+		$table_name = $this->db->dbprefix('product_order');
 		
 		//Build contents query
 		$this->db->set('created_at', 'NOW()', FALSE); 
@@ -31,7 +31,7 @@ class Order_model extends CI_Model
 	public function get_order_list() 
 	{
 		//Select table name
-		$sql = "SELECT * FROM order ORDER BY id DESC";
+		$sql = "SELECT * FROM product_order ORDER BY id DESC";
 		
 		//Get contents
 		$return = $this->db->query($sql)->result();

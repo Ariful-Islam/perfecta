@@ -41,7 +41,7 @@
 									</div>
 									<div class="portlet-body form">
 										<!-- BEGIN FORM-->
-										<form action="<?php echo base_url(); ?>category/category_add" method="post" class="form-horizontal">
+										<form action="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/category/category_add" method="post" class="form-horizontal">
 											<div class="form-body">
 												<div class="row">
 													<div class="col-md-6">

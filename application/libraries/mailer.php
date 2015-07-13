@@ -20,11 +20,11 @@ class Mailer {
         $CI->email->initialize($config);
                 
         $CI->email->to($this->to);
-		if($this->from != "noreply@teamhdn.be")
+		if($this->from != "noreply@perfectabrussels.be")
 		{
-			$CI->email->reply_to($this->from, "TeamHDN");
+			$CI->email->reply_to($this->from, "Perfecta");
 		}
-        $CI->email->from($this->from, 'TeamHDN');
+        $CI->email->from($this->from, 'Perfecta');
         $CI->email->subject($this->subject);
                 
         $CI->email->message($this->body);
@@ -34,7 +34,7 @@ class Mailer {
 		        
 	}
 	
-	function send_mail($to,$subject,$body,$from='noreply@teamhdn.be')
+	function send_mail($to,$subject,$body,$from='noreply@perfectabrussels.be')
 	{
 		$this->subject = $subject;
 		$this->to = $to;

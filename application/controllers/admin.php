@@ -37,11 +37,11 @@ class Admin extends CI_Controller {
 			return false;
 		}
 		
-		$this->load->model('contact_model','model');
+		$this->load->model('order_model','model');
 		
 		$data = array(
-				'contacts' => $this->model->get_contact_list(),
-				'page_view' => 'contact_list'
+				'orders' => $this->model->get_order_list(),
+				'page_view' => 'order_list'
 		);
 		
 		$this->load->view('dashboard', $data);

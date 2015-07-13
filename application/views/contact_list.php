@@ -54,7 +54,7 @@
 								<td><?php echo $contact->company; ?></td>
 								<td><?php echo $contact->message; ?></td>
 								<td><?php echo $contact->created_at; ?></td>
-								<td align="center"><a href="#" data-id="<?php echo $contact->id; ?>" data-link="<?php echo base_url(); ?>contact/delete_message" class="del_msg"><i class="icon-trash"></i></a></td>
+								<td align="center"><a href="#" data-id="<?php echo $contact->id; ?>" data-link="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/contact/delete_message" class="del_msg"><i class="icon-trash"></i></a></td>
 							</tr>
 							<?php
 							}
