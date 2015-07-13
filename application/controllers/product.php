@@ -42,6 +42,7 @@ class Product extends CI_Controller {
 			$this->upload->do_upload();
 			$result = $this->upload->data();
 			$this->add_image($result['file_name']);
+			$this->resize_image($result);
 		}
 
 	}
@@ -68,6 +69,25 @@ class Product extends CI_Controller {
 		);
 		
 		$this->model->add_product_image($data);
+	}
+	
+	private function resize_image($upload_data)
+	{
+		$image_config["image_library"] = "gd2";
+		$image_config["source_image"] = $upload_data["full_path"];
+		$image_config['create_thumb'] = FALSE;
+		$image_config['maintain_ratio'] = TRUE;
+		$image_config['new_image'] = $upload_data["file_path"].$upload_data["raw_name"].'202.png';
+		$image_config['quality'] = "100%";
+		$image_config['width'] = 202;
+		$image_config['height'] = 170;
+		$dim = (intval($upload_data["image_width"]) / intval($upload_data["image_height"])) - ($image_config['width'] / $image_config['height']);
+		$image_config['master_dim'] = ($dim > 0)? "height" : "width";
+		
+		$this->load->library('image_lib');
+		$this->image_lib->initialize($image_config);
+		
+		$this->image_lib->resize();
 	}
 	
 	public function product_entry()

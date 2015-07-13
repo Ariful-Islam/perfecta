@@ -61,11 +61,12 @@
 						<?php
 						foreach($products as $product)
 						{
+							$img = substr($product->image, 0, strrpos($product->image, '.'));
 						?>
 						<a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/shop/single_shop/<?php echo $product->id; ?>/<?php echo $parent_id; ?>/<?php echo $sub_category_id; ?>">
 						<div class="col-lg-4 product">
 							<h3><?php echo $product->price; ?>&#8364;</h3>
-							<img height="170" width="202" src="<?php echo base_url(); ?>uploads/<?php echo $product->image; ?>" alt=""/>
+							<img height="170" width="202" src="<?php echo base_url(); ?>uploads/<?php echo $img.'202.png'; ?>" alt=""/>
 							<h2><?php echo $product->title; ?></h2>
 							<p>Chaussure tige haute</p>
 						</div>
