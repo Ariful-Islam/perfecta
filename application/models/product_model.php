@@ -44,14 +44,25 @@ class Product_model extends CI_Model
 	public function add_user() 
 	{
 		//Select table name
-		$table_name = $this->db->dbprefix('user');
+		// $table_name = $this->db->dbprefix('user');
+		// $data = array(
+					// 'user_email' => 'admin@perfectabrussels.be',
+					// 'password'	 => '202cb962ac59075b964b07152d234b70'
+		// ); 
+		// $return = $this->db->insert($table_name,$data);
+		
+		// return $return;
+		
+		$table_name = $this->db->dbprefix('language');
 		$data = array(
-					'user_email' => 'admin@perfectabrussels.be',
-					'password'	 => '202cb962ac59075b964b07152d234b70'
+					'language_name' => 'english',
+					'language_abbr'	 => 'en'
 		); 
 		$return = $this->db->insert($table_name,$data);
 		
 		return $return;
+		
+		
 	}
 	
 	public function add_product_image($data) 

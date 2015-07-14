@@ -53,18 +53,26 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+				
                 <a class="navbar-brand" href="#"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt="Perfecta"/></a>
+				
             </div>
+			
+			<div style="float: right;">			
+				<ul class="nav navbar-nav">
+					<li style="padding-left:0px; width:25px;"><a class="<?php echo $this->config->item('language')=='english'?'active':''; ?>" href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/init/set_language/english/<?php echo $this->router->class; ?>/<?php echo $this->router->method; ?>">EN</a> </li>
+					<li style="padding-left:0px; width:25px;"><a class="<?php echo $this->config->item('language')=='dutch'?'active':''; ?>" href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/init/set_language/dutch/<?php echo $this->router->class; ?>/<?php echo $this->router->method; ?>">NL</a> </li>
+				</ul><!-- /select-language -->
+			</div>
+			
 			
 			
 			
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<!-- <ul class="select-language">
-					<li class="<?php echo $this->config->item('language')=='english'?'active':''; ?>"><a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/init/set_language/english/<?php echo $this->router->class; ?>">EN</a> </li>
-					<li class="<?php echo $this->config->item('language')=='dutch'?'active':''; ?>"><a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/init/set_language/dutch/<?php echo $this->router->class; ?>">NL</a> </li>
-				</ul> --><!-- /select-language -->
 			
+				
+				
                 <ul class="nav navbar-nav">
 					
                     <li>
