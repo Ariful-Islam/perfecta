@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /* top menu */
 $lang['common_home']='Home';
 $lang['common_work_clothing']='Work Clothing';
