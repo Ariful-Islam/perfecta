@@ -1,3 +1,15 @@
+// Extend jQuery.fn with our new method
+jQuery.extend( jQuery.fn, {
+    // Name of our method & one argument (the parent selector)
+    within: function( pSelector ) {
+        // Returns a subset of items using jQuery.filter
+        return this.filter(function(){
+            // Return truthy/falsey based on presence in parent
+            return $(this).closest( pSelector ).length;
+        });
+    }
+});
+
 var FormWizard = function () {
 
 
@@ -34,40 +46,42 @@ var FormWizard = function () {
                 focusInvalid: false, // do not focus the last invalid input
                 rules: {
                     //account
+                    title: {
+                        minlength: 4,
+                        required: true
+                    },
+                    price: {
+                        minlength: 1,
+                        required: true
+                    },
+                    //add user
                     username: {
-                        minlength: 5,
+                        minlength: 2,
                         required: true
                     },
                     password: {
                         minlength: 5,
                         required: true
                     },
-                    rpassword: {
+                    repassword: {
                         minlength: 5,
                         required: true,
-                        equalTo: "#submit_form_password"
+                        equalTo: "#password"
                     },
-                    //profile
-                    fullname: {
-                        required: true
-                    },
-                    email: {
+                    useremail: {
                         required: true,
                         email: true
                     },
-                    phone: {
+                    //profile
+                    language: {
                         required: true
                     },
-                    gender: {
+                    description: {
+                    	minlength: 1,
                         required: true
                     },
-                    address: {
-                        required: true
-                    },
-                    city: {
-                        required: true
-                    },
-                    country: {
+                    features: {
+                    	minlength: 1,
                         required: true
                     },
                     //payment
@@ -106,7 +120,11 @@ var FormWizard = function () {
                         error.insertAfter("#form_gender_error");
                     } else if (element.attr("name") == "payment[]") { // for uniform checkboxes, insert the after the given container
                         error.insertAfter("#form_payment_error");
-                    } else {
+                    } else if (element.within('.input-group')){
+                    	var parentgroup = $(element).parents('.input-group');
+                    	error.insertAfter(parentgroup);
+                    } 
+                    else {
                         error.insertAfter(element); // for other inputs, just perform default behavior
                     }
                 },
@@ -202,6 +220,8 @@ var FormWizard = function () {
             $('#form_wizard_1').bootstrapWizard({
                 'nextSelector': '.button-next',
                 'previousSelector': '.button-previous',
+                'lastSelector': '.button-last',
+                'firstSelector': '.button-first',
                 onTabClick: function (tab, navigation, index, clickedIndex) {
                     return false;
                     /*
@@ -220,6 +240,45 @@ var FormWizard = function () {
                     if (form.valid() == false) {
                         return false;
                     }
+                    
+                    if (index === 1)
+                    {
+                    	var url = $('#pinurl').val();
+                    	var title = $('#title').val();
+                    	var price = $('#price').val();
+                    	
+                    	var category = [];
+                        $('.mycat:checked').each(function(i){
+                        	category[i] = $(this).val();
+                        });
+                    	
+                        $.ajax({
+                			method: "POST",
+                			url: url,
+                			data: { title : title, category : category, price : price },
+                			dataType: "json",
+                			complete: function(){
+                				$('#product_title').html('<b style="color: #FF2200;">'+title+'</b>');
+                			}
+                		});
+                    }
+                    
+                    if (index === 2)
+                    {
+                    	
+                    	var url = $('#desurl').val();
+                    	var datas = $('#tab2').find('input[name],select[name],textarea[name]').serialize();
+                    	
+                    	
+                        $.ajax({
+                			method: "POST",
+                			url: url,
+                			data: datas,
+                			dataType: "json",
+                			complete: function(){
+                			}
+                		});
+                    }
 
                     handleTitle(tab, navigation, index);
                 },
@@ -229,6 +288,34 @@ var FormWizard = function () {
 
                     handleTitle(tab, navigation, index);
                 },
+                onLast: function (tab, navigation, index) {
+                    success.hide();
+                    error.hide();
+                    
+                    handleTitle(tab, navigation, index);
+                },
+                onFirst: function (tab, navigation, index) {
+                    success.hide();
+                    error.hide();
+                    
+                    var url = $('#desurl').val();
+                	var elem = $('#tab2');
+                	var datas = $('#tab2').find('input[name],select[name],textarea[name]').serialize();
+                	
+                	
+                    $.ajax({
+            			method: "POST",
+            			url: url,
+            			data: datas,
+            			dataType: "json",
+            			complete: function(){
+            				$('#product_lang').html(' <b style="color: #FF2200;">with different Language</b>');
+            				$('#product_title').prepend('another ');
+            				$("#product_lang").attr("tabindex",-1).focus();
+            			}
+            		});
+                    return false;
+                },
                 onTabShow: function (tab, navigation, index) {
                     var total = navigation.find('li').length;
                     var current = index + 1;
@@ -236,13 +323,23 @@ var FormWizard = function () {
                     $('#form_wizard_1').find('.progress-bar').css({
                         width: $percent + '%'
                     });
+                    
+                    if(index === 1)
+                    {
+                    	current = 1;
+                    	$('#form_wizard_1').find('.button-first').show();
+                    }
+                    else
+                    {
+                    	$('#form_wizard_1').find('.button-first').hide();
+                    }
                 }
             });
 
             $('#form_wizard_1').find('.button-previous').hide();
             $('#form_wizard_1 .button-submit').click(function () {
-                alert('Finished! Hope you like it :)');
-            }).hide();
+            	location.reload();
+            });
 
             //apply validation on select2 dropdown value change, this only needed for chosen dropdown integration.
             $('#country_list', form).change(function () {

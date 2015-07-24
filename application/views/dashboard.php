@@ -201,6 +201,26 @@ License: You must have a valid license purchased only from themeforest(the above
 					</a>
 				</li>
 				
+				<li>
+					<a href="javascript:;">
+						<i class="fa fa-user"></i>
+						<span class="title">User</span>
+						<span class="arrow "></span>
+					</a>
+					<ul class="sub-menu">
+						<li>
+							<a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/user">
+							<i class="fa fa-user-plus"></i>
+							Add User</a>
+						</li>
+						<li>
+							<a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/user/user_list">
+							<i class="fa fa-list"></i>
+							List</a>
+						</li>
+					</ul>
+				</li>
+				
 			</ul>
 			<!-- END SIDEBAR MENU -->
 		</div>
@@ -1004,6 +1024,9 @@ License: You must have a valid license purchased only from themeforest(the above
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/global/plugins/bootstrap-summernote/summernote.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/global/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/global/plugins/jquery-validation/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/global/plugins/jquery-validation/js/additional-methods.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/global/plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
 <!-- END PAGE LEVEL PLUGINS -->
 
 
@@ -1045,6 +1068,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="<?php echo base_url(); ?>assets/admin/pages/scripts/table-advanced.js"></script>
 <script src="<?php echo base_url(); ?>assets/admin/pages/scripts/components-editors.js"></script>
 <script src="<?php echo base_url(); ?>assets/admin/pages/scripts/form-fileupload.js"></script>
+<script src="<?php echo base_url(); ?>assets/admin/pages/scripts/form-wizard.js"></script>
 <script>
 jQuery(document).ready(function() {       
    	Metronic.init(); // init metronic core components
@@ -1053,6 +1077,7 @@ jQuery(document).ready(function() {
 	Demo.init(); // init demo features
 	FormFileUpload.init();
 	ComponentsEditors.init();
+	FormWizard.init();
    	TableAdvanced.init();
 });
 </script>

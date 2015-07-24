@@ -123,11 +123,11 @@ class Product extends CI_Controller {
             {            	
             	if ($indent == 1)
             	{
-            		$cat_name = "<input type='checkbox' name='category[]' value='".$result->id."'> <b>".$result->category."</b><br/>";
+            		$cat_name = "<input type='checkbox' name='category[]' class='mycat' value='".$result->id."'> <b>".$result->category."</b><br/>";
             	}
             	else 
             	{
-            		$cat_name = "&nbsp;&nbsp;&nbsp;&nbsp;<input type='checkbox' name='category[]' value='".$result->id."'> ".$result->category."<br/>";
+            		$cat_name = "&nbsp;&nbsp;&nbsp;&nbsp;<input type='checkbox' name='category[]' class='mycat' value='".$result->id."'> ".$result->category."<br/>";
             	}
             	
                 $data[] = array(
@@ -166,7 +166,8 @@ class Product extends CI_Controller {
 		if($return)
 		{
 			$this->session->set_userdata('product_id',$this->db->insert_id());
-			redirect('product/product_entry/#tab_translate');
+			//redirect('product/product_entry/#tab_translate');
+			echo json_encode($return);
 		}
 	}
 	
@@ -190,14 +191,15 @@ class Product extends CI_Controller {
 	
 		if($return)
 		{
-			if ($btn == 'save')
+			echo json_encode($return);
+			/* if ($btn == 'save')
 			{
 				redirect('product/product_entry/#tab_translate');
 			}
 			else 
 			{
 				redirect('product/product_entry/#tab_images');
-			}
+			} */
 		}
 	}
 	

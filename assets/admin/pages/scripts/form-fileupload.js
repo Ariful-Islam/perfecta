@@ -6,7 +6,7 @@ var FormFileUpload = function () {
         init: function () {
 
              // Initialize the jQuery File Upload widget:
-            $('#fileupload').fileupload({
+            $('#submit_form').fileupload({
                 disableImageResize: false,
                 autoUpload: false,
                 disableImageResize: /Android(?!.*Chrome)|Opera/.test(window.navigator.userAgent),
@@ -17,7 +17,7 @@ var FormFileUpload = function () {
             });
 
             // Enable iframe cross-domain access via redirect option:
-            $('#fileupload').fileupload(
+            $('#submit_form').fileupload(
                 'option',
                 'redirect',
                 window.location.href.replace(
@@ -34,18 +34,18 @@ var FormFileUpload = function () {
                     $('<div class="alert alert-danger"/>')
                         .text('Upload server currently unavailable - ' +
                                 new Date())
-                        .appendTo('#fileupload');
+                        .appendTo('#submit_form');
                 });
             }
 
             // Load & display existing files:
-            $('#fileupload').addClass('fileupload-processing');
+            $('#submit_form').addClass('fileupload-processing');
             $.ajax({
                 // Uncomment the following to send cross-domain cookies:
                 //xhrFields: {withCredentials: true},
-                url: $('#fileupload').attr("action"),
+                url: $('#submit_form').attr("action"),
                 dataType: 'json',
-                context: $('#fileupload')[0]
+                context: $('#submit_form')[0]
             }).always(function () {
                 $(this).removeClass('fileupload-processing');
             }).done(function (result) {

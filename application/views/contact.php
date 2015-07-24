@@ -103,7 +103,7 @@
 					<ul>
 						<li> <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Rue Blaes 249, 1000 Bruxelles,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Centre-Ville, Marolles.</li>
 						<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 02 511 03 18</li>
-						<li><span class="icon_mail glyphicon"></span> info@perfectabrussels.be</li>
+						<li><span class="icon_mail glyphicon"></span><a href="mailto:someone@example.com" target="_top">info@perfectabrussels.be</a></li>
 					</ul>
 					</div>
 					<div class="col-lg-12 social_sec">

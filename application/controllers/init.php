@@ -28,9 +28,9 @@ class Init extends CI_Controller {
 	{
 		$this->load->dbforge();
 		
-		$this->dbforge->drop_table('product');
+		/*$this->dbforge->drop_table('product');
 		
-		/*$fields = array(
+		$fields = array(
 				'id' 				=> array(
 										'type' => 'INT',
 										'constraint' => 11, 
@@ -118,7 +118,7 @@ class Init extends CI_Controller {
 		
 		$this->dbforge->add_field($Cfield);
 		$this->dbforge->add_key('id',TRUE);
-		$this->dbforge->create_table('category');*/
+		$this->dbforge->create_table('category');
 		
 		
 		$Pfield = array(
@@ -204,7 +204,7 @@ class Init extends CI_Controller {
 		
 		$this->dbforge->add_field($Ofield);
 		$this->dbforge->add_key('id',TRUE);
-		$this->dbforge->create_table('product_order');*/
+		$this->dbforge->create_table('product_order');
 		
 		$Lfield = array(
 				'id' 				=> array(
@@ -266,7 +266,25 @@ class Init extends CI_Controller {
 		
 		$this->dbforge->add_field($Tfield);
 		$this->dbforge->add_key('id',TRUE);
-		$this->dbforge->create_table('product_translation');
+		$this->dbforge->create_table('product_translation');*/
+		
+		$fields = array(
+				'user_name' 		=> array(
+										'type' => 'VARCHAR',
+										'constraint' => '100'
+									),
+				'created_by' 		=> array(
+										'type' => 'VARCHAR',
+										'constraint' => '100'
+									),
+				'created_at' 		=> array(
+										'type' => 'TIMESTAMP'
+									),
+				'updated_at' 		=> array(
+										'type' => 'TIMESTAMP'
+									)
+		);
+		$this->dbforge->add_column('user', $fields);
 	}
 }
 
