@@ -92,7 +92,7 @@ License: You must have a valid license purchased only from themeforest(the above
 					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 					<img alt="" class="img-circle" src="<?php echo base_url(); ?>assets/admin/layout/img/avatar.png"/>
 					<span class="username username-hide-on-mobile">
-					Admin </span>
+					<?php echo $this->session->userdata('user_name'); ?> </span>
 					<i class="fa fa-angle-down"></i>
 					</a>
 					<ul class="dropdown-menu dropdown-menu-default">
@@ -1069,6 +1069,8 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="<?php echo base_url(); ?>assets/admin/pages/scripts/components-editors.js"></script>
 <script src="<?php echo base_url(); ?>assets/admin/pages/scripts/form-fileupload.js"></script>
 <script src="<?php echo base_url(); ?>assets/admin/pages/scripts/form-wizard.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/admin.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/application.js"></script>
 <script>
 jQuery(document).ready(function() {       
    	Metronic.init(); // init metronic core components

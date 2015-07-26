@@ -60,8 +60,8 @@
 			
 			<div style="float: right;">			
 				<ul class="nav navbar-nav">
-					<li style="padding-left:0px; width:25px;"><a class="<?php echo $this->config->item('language')=='english'?'active':''; ?>" href="<?php echo base_url(); ?>en/init/set_language/english/<?php echo $this->router->class; ?>/<?php echo $this->router->method; ?>">EN</a> </li>
-					<li style="padding-left:0px; width:25px;"><a class="<?php echo $this->config->item('language')=='dutch'?'active':''; ?>" href="<?php echo base_url(); ?>nl/init/set_language/dutch/<?php echo $this->router->class; ?>/<?php echo $this->router->method; ?>">NL</a> </li>
+					<li style="padding-left:0px; width:25px;"><a class="<?php echo $this->config->item('language')=='english'?'active':''; ?>" href="<?php echo base_url(); ?>en/init/set_language/english/<?php echo $this->router->class; ?>/<?php echo $this->router->method; ?>/<?php echo $this->uri->segment(2)?$this->uri->segment(2):''; ?>">EN</a> </li>
+					<li style="padding-left:0px; width:25px;"><a class="<?php echo $this->config->item('language')=='dutch'?'active':''; ?>" href="<?php echo base_url(); ?>nl/init/set_language/dutch/<?php echo $this->router->class; ?>/<?php echo $this->router->method; ?>/<?php echo $this->uri->segment(2)?$this->uri->segment(2):''; ?>">NL</a> </li>
 				</ul><!-- /select-language -->
 			</div>
 			

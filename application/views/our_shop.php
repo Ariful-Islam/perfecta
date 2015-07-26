@@ -32,7 +32,7 @@
 					<h2 class="thick-font"><?php echo $this->lang->line('common_discover_our'); ?> <?php echo $this->lang->line('common_work_clothing'); ?></h2>
 				</div>
 				<div class="col-lg-3">
-						<a href="#"><button><?php echo $this->lang->line('common_browse_our_catalog'); ?></button></a>
+						<a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/work_clothing/clothing"><button><?php echo $this->lang->line('common_browse_our_catalog'); ?></button></a>
 				</div>
 			</div>
 		</div>

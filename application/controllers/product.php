@@ -73,21 +73,40 @@ class Product extends CI_Controller {
 	
 	private function resize_image($upload_data)
 	{
-		$image_config["image_library"] = "gd2";
-		$image_config["source_image"] = $upload_data["full_path"];
-		$image_config['create_thumb'] = FALSE;
-		$image_config['maintain_ratio'] = TRUE;
-		$image_config['new_image'] = $upload_data["file_path"].$upload_data["raw_name"].'202.png';
-		$image_config['quality'] = "100%";
-		$image_config['width'] = 202;
-		$image_config['height'] = 170;
-		$dim = (intval($upload_data["image_width"]) / intval($upload_data["image_height"])) - ($image_config['width'] / $image_config['height']);
-		$image_config['master_dim'] = ($dim > 0)? "height" : "width";
+		$w_orig = $upload_data['image_width'];
+		$h_orig = $upload_data['image_height'];
+		$w_thumb = 202;
+		$h_thumb = ( $h_orig * 202 ) / $w_orig;
+		$y_thumb = 0;
+		$x_thumb = 0;
+		if ($h_thumb > 170) {
+			$y_thumb = ($h_thumb - 170) / 2;
+		} else {
+			$h_thumb = 170;
+			$w_thumb = ($w_orig * 170) / $h_orig;
+			$x_thumb = ($w_thumb - 202) / 2;
+		}
 		
-		$this->load->library('image_lib');
-		$this->image_lib->initialize($image_config);
-		
+		$config = array(
+			'source_image' => $upload_data['full_path'],
+			'new_image' => $upload_data["file_path"].$upload_data["raw_name"].'202.png',
+			'maintain_ratio' => TRUE,
+			'width' => $w_thumb,
+			'height' => $h_thumb
+		);
+		$this->load->library('image_lib', $config);
 		$this->image_lib->resize();
+		$config = array(
+			'source_image' => $upload_data["file_path"].$upload_data["raw_name"].'202.png',
+			'maintain_ratio' => FALSE,
+			'width' => 220,
+			'height' => 170,
+			'x_axis' => $x_thumb,
+			'y_axis' => $y_thumb
+		);
+		$this->image_lib->clear();
+		$this->image_lib->initialize($config);
+		$this->image_lib->crop();
 	}
 	
 	public function product_entry()

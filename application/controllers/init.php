@@ -10,12 +10,12 @@ class Init extends CI_Controller {
 		$this->load->view('home',$data);
 	}
 	
-	public function set_language($language, $path, $method)
+	public function set_language($language, $path, $method, $segment=0)
 	{
 		$this->session->set_userdata('sitelang',$language);
 		$lang_abbr = $language=="english"?"en":"nl";
 		$this->session->set_userdata('lang_abbr',$lang_abbr);
-		redirect($path.'/'.$method);
+		$segment==0?redirect($path.'/'.$method):redirect($path.'/'.$method.'/'.$segment.'/0/0');
 	}
 	
 	public function add_user()

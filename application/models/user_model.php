@@ -4,21 +4,33 @@
  *
  * @category  CodeIgniter
  * @author    Ariful Islam
- * @copyright 2015 http://www.mdarifulislam.com
+ * @copyright 2014 http://www.oployeelabs.com
  * @version   0.1
 */
 
-class Order_model extends CI_Model 
+class User_model extends CI_Model 
 {
 	public function __construct()
     {
         parent::__construct();
     }
 	
-	public function add_order_details($data) 
+	public function get_user_list() 
 	{
 		//Select table name
-		$table_name = $this->db->dbprefix('product_order');
+		$table_name = $this->db->dbprefix('user');
+		
+		//Get contents
+		$this->db->select('*')->from($table_name);
+		$return = $this->db->get()->result();
+		
+		return $return;
+	}
+	
+	public function add_user($data) 
+	{
+		//Select table name
+		$table_name = $this->db->dbprefix('user');
 		
 		//Build contents query
 		$this->db->set('created_at', 'NOW()', FALSE); 
@@ -28,20 +40,18 @@ class Order_model extends CI_Model
 		return $return;
 	}
 	
-	public function get_order_list() 
+	public function delete_user($id)
 	{
 		//Select table name
-		$table_name = $this->db->dbprefix('product_order po');
+		$table_name = $this->db->dbprefix('user');
 		
 		//Build contents query
-		$this->db->select('po.id, po.product_id, po.email, po.created_at, p.title')->from($table_name);
-		$this->db->join('product p', 'po.product_id = p.id', 'left');
-		
-		//Get contents
-		$return = $this->db->get()->result();
+		$this->db->where('id',$id);
+		$return = $this->db->delete($table_name);
 		
 		return $return;
 	}
 	
 }
 ?>
+

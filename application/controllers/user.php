@@ -11,29 +11,27 @@ class User extends CI_Controller {
 		$this->load->view('dashboard', $data);
 	}
 	
-	public function login()
+	public function add_user()
 	{
-		$this->load->model('admin_signin_model','model');
+		$this->load->model('user_model','model');
 		
 		$data = array(
-					'user_email' 	=> $this->input->post('email'),
-					'password' 		=> $this->input->post('password')
+					'user_email' 	=> $this->input->post('useremail'),
+					'user_name' 	=> $this->input->post('username'),
+					'created_by' 	=> $this->session->userdata('user_name'),
+					'password' 		=> md5($this->input->post('password'))
 				);
 		
-		$result = $this->model->sign_in($data);
+		$result = $this->model->add_user($data);
 		
 		if ($result)
 		{
-			$this->session->set_userdata($data);
 			redirect('admin/dashboard');
 			return false;
 		}
-		
-		redirect('admin');
-		return false;
 	}
 	
-	public function dashboard()
+	public function user_list()
 	{
 		if(!$this->session->userdata('user_email'))
 		{
@@ -41,21 +39,27 @@ class User extends CI_Controller {
 			return false;
 		}
 		
-		$this->load->model('order_model','model');
+		$this->load->model('user_model','model');
 		
 		$data = array(
-				'orders' => $this->model->get_order_list(),
-				'page_view' => 'order_list'
+				'users' => $this->model->get_user_list(),
+				'page_view' => 'user_list'
 		);
 		
 		$this->load->view('dashboard', $data);
 	}
 	
-	public function do_signout()
+	public function delete_user()
 	{
-		$this->session->sess_destroy();
-		redirect(base_url(), 'refresh');
+		// Load model
+		$this->load->model('user_model','model');
+		
+		$return = $this->model->delete_user($this->input->post('id'));
+		
+		echo json_encode(true);
+		
 	}
+	
 }
 
 /* End of file admin.php */

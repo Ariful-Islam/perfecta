@@ -37,7 +37,7 @@ class Order extends CI_Controller {
 		// If data inserted then send mail
 		if($return)
 		{
-			$this->send_email('cc@ergonomic.be', $this->input->post('ppname'), $this->input->post('useremail'));
+			$this->send_email('ai@ergonomic.be', $this->input->post('ppname'), $this->input->post('useremail'));
 			echo json_encode("success");
 		}
 	}

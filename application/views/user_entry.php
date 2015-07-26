@@ -35,7 +35,7 @@
 									</div>
 									<div class="portlet-body form">
 										<!-- BEGIN FORM-->
-										<form id="submit_form" action="#" class="form-horizontal">
+										<form id="user_form" action="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/user/add_user" method="post" class="form-horizontal">
 											<div class="form-body">
 												<div class="form-group">
 													<label class="col-md-3 control-label">User Name: <span class="required">

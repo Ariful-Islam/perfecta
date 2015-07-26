@@ -36,6 +36,7 @@ class Mailer {
 	
 	function send_mail($to,$subject,$body,$from='noreply@perfectabrussels.be')
 	{
+		$from = 'noreply@perfectabrussels.be';
 		$this->subject = $subject;
 		$this->to = $to;
 		$this->body = $body;

@@ -20,7 +20,7 @@ class Admin extends CI_Controller {
 		
 		if ($result)
 		{
-			$this->session->set_userdata($data);
+			$this->session->set_userdata($result);
 			redirect('admin/dashboard');
 			return false;
 		}

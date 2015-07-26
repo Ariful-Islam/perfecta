@@ -73,7 +73,7 @@
 			{
 				$this->cur_page = $base_page;
 			}
-	
+			
 			// Is the page number beyond the result range?
 			// If so we show the last page
 			if ($this->use_page_numbers)
@@ -226,7 +226,7 @@
 			$output = preg_replace("#([^:])//+#", "\\1/", $output);
 	
 			// Add the wrapper HTML if exists
-			// $output = $page_info.$records_info.$this->full_tag_open.$output.$this->full_tag_close;
+			//$output = $page_info.$records_info.$this->full_tag_open.$output.$this->full_tag_close;
 			$output = $this->full_tag_open.$output.$this->full_tag_close;
 	
 			return $output;

@@ -27,7 +27,7 @@ class Admin_signin_model extends CI_Model
 		
 		if ($query->num_rows() > 0)
 		{
-			return TRUE;
+			return $query->row_array();
 		}
 		return FALSE;
 	}

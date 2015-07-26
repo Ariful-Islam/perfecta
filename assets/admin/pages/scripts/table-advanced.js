@@ -85,6 +85,9 @@ var TableAdvanced = function () {
 
     var initTable2 = function () {
         var table = $('#sample_2');
+		
+		var orderthIndex = $('#sample_2 tr th.order').index()===-1?0:$('#sample_2 tr th.order').index();
+		var how = $('#sample_2 tr th.order').hasClass('desc')?'desc':'asc';
 
         /* Table tools samples: https://www.datatables.net/release-datatables/extras/TableTools/ */
 
@@ -116,7 +119,7 @@ var TableAdvanced = function () {
             },
 
             "order": [
-                [0, 'asc']
+                [orderthIndex, how]
             ],
             "lengthMenu": [
                 [5, 15, 20, -1],
@@ -434,6 +437,7 @@ var TableAdvanced = function () {
             initTable4();
             initTable5();
             initTable6();
+			initTableOrder();
 
             console.log('me 2');
         }
