@@ -60,6 +60,41 @@ class User extends CI_Controller {
 		
 	}
 	
+	public function change_password()
+	{
+		$data = array(
+				'page_view' => 'change_password'
+		);
+		
+		$this->load->view('dashboard', $data);
+	}
+	
+	public function match_password()
+	{
+		$this->load->model('user_model', 'model');
+		
+		$result = $this->model->match_password($this->input->post('curpassword'));
+		
+		echo json_encode($result);
+	}
+	
+	public function update_password()
+	{
+		$this->load->model('user_model','model');
+		
+		$data = array(
+					'password' 		=> md5($this->input->post('password'))
+				);
+		
+		$result = $this->model->update_user($data);
+		
+		if ($result)
+		{
+			redirect('user/change_password');
+			return false;
+		}
+	}
+	
 }
 
 /* End of file admin.php */

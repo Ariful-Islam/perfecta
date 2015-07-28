@@ -16,6 +16,13 @@
 					minlength: 2,
 					required: true
 				},
+				curpassword: {
+					required: true,
+					remote: {
+							url: BASE_URL+"user/match_password",
+							type: "post"
+					}
+				},
 				password: {
 					minlength: 5,
 					required: true

@@ -52,6 +52,39 @@ class User_model extends CI_Model
 		return $return;
 	}
 	
+	public function match_password($cur_pass)
+	{
+		//Select table name
+		$table_name = $this->db->dbprefix('user');
+		
+		$this->db->select('*')->from($table_name);
+		$this->db->where('user_email',$this->session->userdata('user_email'));
+		$this->db->where('password',md5($cur_pass));
+		$query = $this->db->get();
+		
+		if ($query->num_rows() > 0)
+		{
+			return TRUE;
+		}
+		return FALSE;
+	}
+	
+	public function update_user($data)
+	{
+		//Select table name
+		$table_name = $this->db->dbprefix('user');
+		
+		$this->db->where('user_email',$this->session->userdata('user_email'));
+		
+		$query = $this->db->update($table_name, $data);
+		
+		if ($query)
+		{
+			return TRUE;
+		}
+		return FALSE;
+	}
+	
 }
 ?>
 

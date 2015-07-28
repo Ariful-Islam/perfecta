@@ -222,7 +222,7 @@ class Product extends CI_Controller {
 		}
 	}
 	
-	public function delete_message()
+	public function delete_product()
 	{
 		// Load model
 		$this->load->model('product_model','model');
@@ -232,7 +232,7 @@ class Product extends CI_Controller {
 				'archive' => 0
 		);
 		
-		$return = $this->model->delete_message($data, $this->input->post('id'));
+		$return = $this->model->delete_product($data, $this->input->post('id'));
 		
 		echo json_encode(true);
 		

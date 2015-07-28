@@ -54,17 +54,12 @@ class Category extends CI_Controller {
 		}
 	}
 	
-	public function delete_message()
+	public function delete_category()
 	{
 		// Load model
 		$this->load->model('category_model','model');
 		
-		// gathering data
-		$data = array(
-				'archive' => 0
-		);
-		
-		$return = $this->model->delete_message($data, $this->input->post('id'));
+		$return = $this->model->delete_category($this->input->post('id'));
 		
 		echo json_encode(true);
 		
