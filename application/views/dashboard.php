@@ -52,6 +52,10 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href="<?php echo base_url(); ?>assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/favicon.ico"/>
+
+<script>
+	var BASE_URL = "<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/";
+</script>
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -97,6 +101,10 @@ License: You must have a valid license purchased only from themeforest(the above
 					</a>
 					<ul class="dropdown-menu dropdown-menu-default">
 						
+						<li>
+							<a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/user/change_password">
+							<i class="icon-lock"></i> Change Password </a>
+						</li>
 						<li>
 							<a href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/admin/do_signout">
 							<i class="icon-key"></i> Log Out </a>
@@ -200,7 +208,10 @@ License: You must have a valid license purchased only from themeforest(the above
 						Contact </span>
 					</a>
 				</li>
-				
+				<?php
+					if($this->session->userdata('id') == 1)
+					{
+				?>
 				<li>
 					<a href="javascript:;">
 						<i class="fa fa-user"></i>
@@ -220,6 +231,9 @@ License: You must have a valid license purchased only from themeforest(the above
 						</li>
 					</ul>
 				</li>
+				<?php 
+					}
+				?>
 				
 			</ul>
 			<!-- END SIDEBAR MENU -->

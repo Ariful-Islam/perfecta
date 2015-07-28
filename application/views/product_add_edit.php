@@ -22,7 +22,7 @@
 			<!-- BEGIN PAGE CONTENT-->
 			<div class="row">
 				<div class="col-md-12">
-					<div class="portlet box blue" id="form_wizard_1">
+					<div class="portlet box green" id="form_wizard_1">
 						<div class="portlet-title">
 							<div class="caption">
 								<i class="icon-handbag"></i> Add Your Product in Just 3 Steps

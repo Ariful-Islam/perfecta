@@ -23,7 +23,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<!-- BEGIN EXAMPLE TABLE PORTLET-->
-					<div class="portlet box green-haze">
+					<div class="portlet box green">
 						<div class="portlet-title">
 							<div class="caption">
 								<i class="fa fa-list"></i>Product
@@ -52,7 +52,7 @@
 								<td><?php echo $product->id; ?></td>
 								<td><?php echo $product->title; ?></td>
 								<td><?php echo $product->price; ?></td>
-								<td align="center"><a href="#" data-id="<?php echo $product->id; ?>" data-link="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/product/delete_message" class="del_msg"><i class="icon-trash"></i></a></td>
+								<td align="center"><a href="#" data-id="<?php echo $product->id; ?>" data-link="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/product/delete_product" class="del_msg"><i class="icon-trash"></i></a></td>
 							</tr>
 							<?php
 							}

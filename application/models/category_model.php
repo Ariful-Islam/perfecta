@@ -106,6 +106,18 @@ class Category_model extends CI_Model
 		return $return;
 	}
 	
+	public function delete_category($id)
+	{
+		//Select table name
+		$table_name = $this->db->dbprefix('category');
+		
+		//Build contents query
+		$this->db->where('id',$id);
+		$return = $this->db->delete($table_name);
+		
+		return $return;
+	}
+	
 }
 ?>
 

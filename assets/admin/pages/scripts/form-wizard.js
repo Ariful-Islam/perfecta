@@ -333,6 +333,12 @@ var FormWizard = function () {
                     {
                     	$('#form_wizard_1').find('.button-first').hide();
                     }
+					
+					$('#form_wizard_1').find('.button-submit').hide();
+					if(index === 2)
+					{
+						$('#form_wizard_1').find('.button-submit').show();
+					}
                 }
             });
 
