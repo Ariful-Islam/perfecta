@@ -160,12 +160,15 @@ class Product extends CI_Controller {
         $indent++;
         
         $data = array();
+		
+		$category_array = explode(',',$category_id);
         
         if($results = $this->model->get_dropdown_categories($parent_id))
         {
             foreach ($results as $result) 
             {   
-            	$chk = $category_id==$result->id?'checked':'';
+            	//$chk = $category_id==$result->id?'checked':'';
+				$chk = in_array($result->id, $category_array)?'checked':'';
             	
             	if ($indent == 1)
             	{
@@ -181,7 +184,7 @@ class Product extends CI_Controller {
                     'name'        => $cat_name
                 );
                 
-                $sub = $this->_get_menu_categories($result->id, $indent);
+                $sub = $this->_get_menu_categories($result->id, $indent, $category_id);
                 
                 if ($sub) 
                 {

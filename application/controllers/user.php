@@ -26,7 +26,7 @@ class User extends CI_Controller {
 		
 		if ($result)
 		{
-			redirect('admin/dashboard');
+			redirect('admin/user/user_list');
 			return false;
 		}
 	}
