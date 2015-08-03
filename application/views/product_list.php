@@ -52,7 +52,10 @@
 								<td><?php echo $product->id; ?></td>
 								<td><?php echo $product->title; ?></td>
 								<td><?php echo $product->price; ?></td>
-								<td align="center"><a href="#" data-id="<?php echo $product->id; ?>" data-link="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/product/delete_product" class="del_msg"><i class="icon-trash"></i></a></td>
+								<td align="center">
+									<a href="#" data-id="<?php echo $product->id; ?>" data-link="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/product/delete_product" class="del_msg"><i class="icon-trash"></i></a>
+									<a data-id="<?php echo $product->id; ?>" href="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/product/edit_product/<?php echo $product->id; ?>"><i class="icon-pencil"></i></a>
+								</td>
 							</tr>
 							<?php
 							}

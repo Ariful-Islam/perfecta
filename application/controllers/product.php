@@ -20,17 +20,40 @@ class Product extends CI_Controller {
 		$this->load->view('dashboard', $data);
 	}
 	
-	public function do_upload()
+	public function edit_product($id, $lang='en')
+	{
+		if(!$this->session->userdata('user_email'))
+		{
+			redirect('admin');
+			return false;
+		}
+		
+		$this->load->model('product_model','product_model');
+		$this->load->model('language_model');
+		$products = $this->product_model->get_product_for_edit($id, $lang);
+		
+		$data = array(
+				'page_view' => 'product_edit',
+				'category'	=> $this->_get_menu_categories(NULL, 0, $products->category_id),
+				'language'	=> $this->language_model->get_language(),
+				'products'	=> $products
+		);
+		
+		$this->load->view('dashboard', $data);
+	}
+	
+	public function do_upload($id=0)
 	{
 
 		$this->load->library('upload');
 
 		$files = $_FILES;
 		$cpt = count($_FILES['userfile']['name']);
+		$replacable = array('#','!','@','$','%','^','&','*',' ','(',')','[',']','{','}');
 		for($i=0; $i<$cpt; $i++)
 		{
-
-			$_FILES['userfile']['name']= $files['userfile']['name'][$i];
+			$name = str_replace($replacable,'',$files['userfile']['name'][$i]);
+			$_FILES['userfile']['name']= $name;
 			$_FILES['userfile']['type']= $files['userfile']['type'][$i];
 			$_FILES['userfile']['tmp_name']= $files['userfile']['tmp_name'][$i];
 			$_FILES['userfile']['error']= $files['userfile']['error'][$i];
@@ -41,7 +64,7 @@ class Product extends CI_Controller {
 			$this->upload->initialize($this->set_upload_options());
 			$this->upload->do_upload();
 			$result = $this->upload->data();
-			$this->add_image($result['file_name']);
+			$this->add_image($result['file_name'], $id);
 			$this->resize_image($result);
 		}
 
@@ -51,7 +74,7 @@ class Product extends CI_Controller {
 		// upload an image options
 		$config = array();
 		$config['upload_path'] = './uploads/';
-		$config['allowed_types'] = 'gif|jpg|png';
+		$config['allowed_types'] = 'gif|jpg|png|jpeg';
 		$config['max_size']      = '0';
 		$config['overwrite']     = FALSE;
 
@@ -59,12 +82,14 @@ class Product extends CI_Controller {
 		return $config;
 	}
 	
-	private function add_image($image_name)
+	private function add_image($image_name, $id)
 	{
 		$this->load->model('product_model','model');
 		
+		$product_id = $id==0?$this->session->userdata('product_id'):$id;
+		
 		$data = array(
-				'product_id' => $this->session->userdata('product_id'),
+				'product_id' => $product_id,
 				'image'		 => $image_name
 		);
 		
@@ -128,7 +153,7 @@ class Product extends CI_Controller {
 	 * @param unknown_type $parent_id
 	 * @param unknown_type $indent
 	 */
-	private function _get_menu_categories($parent_id=NULL, $indent= 0) 
+	private function _get_menu_categories($parent_id=NULL, $indent= 0, $category_id=0) 
     {
 		$this->load->model('category_model', 'model');
 		
@@ -139,14 +164,16 @@ class Product extends CI_Controller {
         if($results = $this->model->get_dropdown_categories($parent_id))
         {
             foreach ($results as $result) 
-            {            	
+            {   
+            	$chk = $category_id==$result->id?'checked':'';
+            	
             	if ($indent == 1)
             	{
-            		$cat_name = "<input type='checkbox' name='category[]' class='mycat' value='".$result->id."'> <b>".$result->category."</b><br/>";
+            		$cat_name = "<input type='checkbox' name='category[]' ".$chk." class='mycat' value='".$result->id."'> <b>".$result->category."</b><br/>";
             	}
             	else 
             	{
-            		$cat_name = "&nbsp;&nbsp;&nbsp;&nbsp;<input type='checkbox' name='category[]' class='mycat' value='".$result->id."'> ".$result->category."<br/>";
+            		$cat_name = "&nbsp;&nbsp;&nbsp;&nbsp;<input type='checkbox' name='category[]' ".$chk." class='mycat' value='".$result->id."'> ".$result->category."<br/>";
             	}
             	
                 $data[] = array(
@@ -190,6 +217,29 @@ class Product extends CI_Controller {
 		}
 	}
 	
+	public function product_update($id)
+	{
+		// Load model
+		$this->load->model('product_model');
+	
+		// gathering data
+		$data = array(
+				'title' 				=> $this->input->post('title'),
+				'price'					=> $this->input->post('price'),
+				'category_id'			=> implode(',',$this->input->post('category')),
+				'archive'				=> 1
+		);
+	
+		// Insert data
+		$return = $this->product_model->update_product_details($data, $id);
+	
+		if($return)
+		{
+			//$this->session->set_userdata('product_id',$this->db->insert_id());
+			echo json_encode($return);
+		}
+	}
+	
 	public function product_description_add()
 	{
 		// Load model
@@ -219,6 +269,27 @@ class Product extends CI_Controller {
 			{
 				redirect('product/product_entry/#tab_images');
 			} */
+		}
+	}
+	
+	public function product_description_update($id)
+	{
+		// Load model
+		$this->load->model('product_model');
+	
+		// gathering data
+		$data = array(
+				'language_id'			=> $this->input->post('language'),
+				'features'				=> $this->input->post('features'),
+				'description'			=> $this->input->post('description')
+		);
+	
+		// Insert data
+		$return = $this->product_model->update_product_description($data, $id, $this->input->post('language'));
+	
+		if($return)
+		{
+			echo json_encode($return);
 		}
 	}
 	

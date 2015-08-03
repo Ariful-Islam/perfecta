@@ -64,7 +64,7 @@
 									foreach($product_images as $image)
 									{
 									?>
-									<img class="img-responsive img-main" src="<?php echo base_url(); ?>uploads/<?php echo $image->image; ?>" alt=""/>
+									<img class="img-responsive img-main" src="<?php echo base_url('uploads/'.$image->image); ?>" alt=""/>
 									<?php
 									break;
 									}

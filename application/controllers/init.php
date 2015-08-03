@@ -28,7 +28,14 @@ class Init extends CI_Controller {
 	{
 		$this->load->dbforge();
 		
-		/*$this->dbforge->drop_table('product');
+		$this->dbforge->drop_table('category');
+		$this->dbforge->drop_table('contact_us');
+		$this->dbforge->drop_table('language');
+		$this->dbforge->drop_table('product');
+		$this->dbforge->drop_table('product_image');
+		$this->dbforge->drop_table('product_order');
+		$this->dbforge->drop_table('product_translation');
+		$this->dbforge->drop_table('user');
 		
 		$fields = array(
 				'id' 				=> array(
@@ -154,7 +161,7 @@ class Init extends CI_Controller {
 		$this->dbforge->add_key('id',TRUE);
 		$this->dbforge->create_table('product'); 
 		
-		/*$Ifield = array(
+		$Ifield = array(
 				'id' 				=> array(
 										'type' => 'INT',
 										'constraint' => 11, 
@@ -266,7 +273,7 @@ class Init extends CI_Controller {
 		
 		$this->dbforge->add_field($Tfield);
 		$this->dbforge->add_key('id',TRUE);
-		$this->dbforge->create_table('product_translation');*/
+		$this->dbforge->create_table('product_translation');
 		
 		$fields = array(
 				'user_name' 		=> array(

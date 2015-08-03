@@ -28,6 +28,19 @@ class Product_model extends CI_Model
 		return $return;
 	}
 	
+	public function update_product_details($data, $id)
+	{
+		//Select table name
+		$table_name = $this->db->dbprefix('product');
+		
+		//Build contents query
+		$this->db->set('updated_at', 'NOW()', FALSE);
+		$this->db->where('id',$id);
+		$return = $this->db->update($table_name,$data);
+		
+		return $return;
+	}
+	
 	public function add_product_description($data)
 	{
 		//Select table name
@@ -41,24 +54,47 @@ class Product_model extends CI_Model
 		return $return;
 	}
 	
+	public function update_product_description($data, $id, $lang)
+	{
+		//Select table name
+		$table_name = $this->db->dbprefix('product_translation');
+	
+		//Build contents query
+		$this->db->set('updated_at', 'NOW()', FALSE);
+		$this->db->where('product_id',$id);
+		$this->db->where('language_id',$lang);
+		$return = $this->db->update($table_name,$data);
+	
+		return $return;
+	}
+	
+	
 	public function add_user() 
 	{
 		//Select table name
-		// $table_name = $this->db->dbprefix('user');
-		// $data = array(
-					// 'user_email' => 'admin@perfectabrussels.be',
-					// 'password'	 => '202cb962ac59075b964b07152d234b70'
-		// ); 
-		// $return = $this->db->insert($table_name,$data);
+		$table_name = $this->db->dbprefix('user');
+		$data = array(
+					'user_email' => 'admin@perfectabrussels.be',
+					'password'	 => '202cb962ac59075b964b07152d234b70'
+		); 
+		$this->db->insert($table_name,$data);
 		
-		// return $return;
+		
 		
 		$table_name = $this->db->dbprefix('language');
+		
 		$data = array(
-					'language_name' => 'english',
-					'language_abbr'	 => 'en'
-		); 
-		$return = $this->db->insert($table_name,$data);
+				array(
+						'language_name' => 'english',
+						'language_abbr'	 => 'en'
+				),
+				array(
+						'language_name' => 'dutch',
+						'language_abbr'	 => 'nl'
+				)
+		);
+		
+		$return = $this->db->insert_batch($table_name, $data);
 		
 		return $return;
 		
@@ -135,6 +171,22 @@ class Product_model extends CI_Model
 		
 		$this->db->where("p.id",$id);
 		$this->db->where("l.language_id",$this->config->item('language_abbr'));
+		$return = $this->db->get()->row();
+		
+		return $return;
+	}
+	
+	public function get_product_for_edit($id, $lang)
+	{
+		//Select table name
+		$table_name = $this->db->dbprefix('product p');
+	
+		//Get contents
+		$this->db->select('*')->from($table_name);
+		$this->db->join('product_translation l', 'p.id = l.product_id', 'left');
+	
+		$this->db->where("p.id",$id);
+		$this->db->where("l.language_id",$lang);
 		$return = $this->db->get()->row();
 		
 		return $return;

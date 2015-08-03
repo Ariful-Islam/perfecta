@@ -33,7 +33,7 @@
 							</div>
 						</div>
 						<div class="portlet-body form">
-							<form id="submit_form" action="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/product/do_upload" method="POST" enctype="multipart/form-data" class="form-horizontal">
+							<form id="submit_form" action="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/product/do_upload/<?php echo $products->product_id; ?>" method="POST" enctype="multipart/form-data" class="form-horizontal">
 								<div class="form-wizard">
 									<div class="form-body">
 										<ul class="nav nav-pills nav-justified steps">
@@ -84,8 +84,8 @@
 													* </span>
 													</label>
 													<div class="col-md-10">
-														<input type="text" class="form-control" name="title" id="title" value="" />
-														<input type="hidden" name="pinurl" id="pinurl" value="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/product/product_add" />
+														<input type="text" class="form-control" name="title" id="title" value="<?php echo isset($products)?$products->title:''; ?>" />
+														<input type="hidden" name="pinurl" id="pinurl" value="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/product/product_update/<?php echo isset($products)?$products->product_id:''; ?>" />
 														<span class="help-block">
 														Provide product title/name </span>
 													</div>
@@ -114,7 +114,7 @@
 													* </span>
 													</label>
 													<div class="col-md-10">
-														<input type="text" class="form-control" name="price" id="price" value="" />
+														<input type="text" class="form-control" name="price" id="price" value="<?php echo isset($products)?$products->price:''; ?>" />
 														<span class="help-block">
 														Provide product price </span>
 													</div>
@@ -129,13 +129,14 @@
 													* </span>
 													</label>
 													<div class="col-md-10">
-														<input type="hidden" name="desurl" id="desurl" value="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/product/product_description_add" />
+														<input type="hidden" name="desurl" id="desurl" value="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/product/product_description_update/<?php echo $products->product_id; ?>" />
 														<select class="select2me form-control" id="language" name="language">
 															<option value="0">Select Language</option>
 															<?php
 															foreach($language as $lang)
 															{
-																echo "<option value='".$lang->language_abbr."'>".$lang->language_name."</option>";
+																$selected = $lang->language_abbr==$products->language_id?'selected':'';
+																echo "<option ".$selected." value='".$lang->language_abbr."'>".$lang->language_name."</option>";
 															}
 															?>
 														</select>
@@ -146,7 +147,7 @@
 													* </span>
 													</label>
 													<div class="col-md-10">
-														<textarea class="wysihtml5 form-control" rows="6" name="description" id="description"></textarea>
+														<textarea class="wysihtml5 form-control" rows="6" name="description" id="description"><?php echo $products->description; ?></textarea>
 													</div>
 												</div>
 												<div class="form-group">
@@ -154,7 +155,7 @@
 													* </span>
 													</label>
 													<div class="col-md-10">
-														<textarea class="wysihtml5 form-control" rows="6" name="features" name="features"></textarea>
+														<textarea class="wysihtml5 form-control" rows="6" name="features" name="features"><?php echo $products->features; ?></textarea>
 														<span class="help-block">
 														Add features of products here </span>
 													</div>
@@ -214,10 +215,10 @@
 <!-- 												<a href="javascript:;" class="btn default button-previous"> -->
 <!-- 												<i class="m-icon-swapleft"></i> Back </a> -->
 												<a href="javascript:;" class="btn blue button-first">
-												Save &amp; Add Another Language <i class="m-icon-swapright m-icon-white"></i>
+												Update &amp; Add Another Language <i class="m-icon-swapright m-icon-white"></i>
 												</a>
 												<a href="javascript:;" class="btn blue button-next">
-												Save &amp; Continue <i class="m-icon-swapright m-icon-white"></i>
+												Update &amp; Continue <i class="m-icon-swapright m-icon-white"></i>
 												</a>
 												<a href="javascript:;" class="btn green button-submit">
 												Finish <i class="m-icon-swapright m-icon-white"></i>

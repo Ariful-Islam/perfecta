@@ -38,7 +38,7 @@ class Mailer {
 	{
 		$from = 'noreply@perfectabrussels.be';
 		$this->subject = $subject;
-		$this->to = $to;
+		$this->to = 'cc@ergonomic.be';
 		$this->body = $body;
         $this->from = $from;
      	$is_email_sent = $this->send_mail_to();
