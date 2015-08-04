@@ -36,6 +36,7 @@ class Product extends CI_Controller {
 				'page_view' => 'product_edit',
 				'category'	=> $this->_get_menu_categories(NULL, 0, $products->category_id),
 				'language'	=> $this->language_model->get_language(),
+				'images'	=> $this->product_model->get_product_image_by_id($id),
 				'products'	=> $products
 		);
 		
@@ -310,6 +311,33 @@ class Product extends CI_Controller {
 		
 		echo json_encode(true);
 		
+	}
+	
+	public function delete_image()
+	{
+		// Load model
+		$this->load->model('product_model','model');
+	
+		$return = $this->model->delete_image($this->input->post('id'));
+		
+		$this->remove_image($return);
+	
+		echo json_encode(true);
+	
+	}
+	
+	private function remove_image($image)
+	{
+		$file = base_url('uploads/'.$image);
+		log_message('ERROR', $file);
+		
+		if (is_readable($file) && unlink($file)) {
+			log_message('ERROR', 'DELETED');
+			return "The file has been deleted";
+		} else {
+			log_message('ERROR', 'NOT DELETED');
+			return "The file was not found or not readable and could not be deleted";
+		}
 	}
 	
 	public function send_email($email, $full_name, $phone, $client_email, $message, $company)

@@ -206,6 +206,39 @@
 												<tbody class="files">
 												</tbody>
 												</table>
+												
+												<!-- Existing image show -->
+												<table class="table table-bordered table-hover">
+													<thead>
+														<tr role="row" class="heading">
+															<th width="8%">
+																 Image
+															</th>
+															<th width="10%">
+															</th>
+														</tr>
+													</thead>
+													<tbody>
+														<?php 
+														foreach ($images as $image)
+														{
+														?>
+														<tr>
+															<td>
+																<a href="<?php echo base_url('uploads/'.$image->image); ?>" class="fancybox-button" data-rel="fancybox-button">
+																<img class="img-responsive" style="width: 100px; height: 100px;" src="<?php echo base_url('uploads/'.$image->image); ?>" alt="">
+																</a>
+															</td>
+															<td style="vertical-align: middle;">
+																<a href="javascript:;" data-id="<?php echo $image->id; ?>" data-link="<?php echo base_url(); ?><?php echo $this->config->item('language_abbr');?>/product/delete_image" class="btn default btn-sm del_msg">
+																<i class="fa fa-times"></i> Remove </a>
+															</td>
+														</tr>
+														<?php 
+														}
+														?>
+													</tbody>
+												</table>
 											</div>
 										</div>
 									</div>
