@@ -126,6 +126,22 @@ class Product_model extends CI_Model
 		return $return;
 	}
 	
+	public function delete_image($id)
+	{
+		//Select table name
+		$table_name = $this->db->dbprefix('product_image');
+		
+		$this->db->select('image')->from($table_name)->where('id', $id);
+		$result = $this->db->get()->row();
+		$return = $result->image;
+		
+		//Build contents query
+		$this->db->where('id',$id);
+		$this->db->delete($table_name);
+		
+		return $return;
+	}
+	
 	public function get_product_list() 
 	{
 		//Select table name
