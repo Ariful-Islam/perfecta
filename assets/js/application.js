@@ -24,7 +24,7 @@
 
 	$.fn.showBigImage = function() {
 		var elem = this;
-		var src = this.attr('src');
+		var src = this.data('url');
 		$(".img-main").attr('src',src);
 	};
 

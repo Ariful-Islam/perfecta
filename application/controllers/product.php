@@ -67,6 +67,7 @@ class Product extends CI_Controller {
 			$result = $this->upload->data();
 			$this->add_image($result['file_name'], $id);
 			$this->resize_image($result);
+			$this->create_thumbnail($result);
 		}
 
 	}
@@ -133,10 +134,11 @@ class Product extends CI_Controller {
 		$this->image_lib->clear();
 		$this->image_lib->initialize($config);
 		$this->image_lib->crop();
-		
-		
-		
-		// for thumbnail
+	}
+	
+	private function create_thumbnail($upload_data)
+	{
+		$this->image_lib->clear();
 		$w_orig = $upload_data['image_width'];
 		$h_orig = $upload_data['image_height'];
 		$w_thumb = 80;
@@ -158,8 +160,7 @@ class Product extends CI_Controller {
 			'width' => $w_thumb,
 			'height' => $h_thumb
 		);
-		//$this->load->library('image_lib', $config);
-		$this->image_lib->clear();
+		$this->image_lib->initialize($config);
 		$this->image_lib->resize();
 		$config = array(
 			'source_image' => $upload_data["file_path"].$upload_data["raw_name"].'80.png',

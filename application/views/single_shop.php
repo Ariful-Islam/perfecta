@@ -74,9 +74,9 @@
 									<?php 
 									foreach($product_images as $image)
 									{
-										$img = substr($product->image, 0, strrpos($product->image, '.'));
+										$img = substr($image->image, 0, strrpos($image->image, '.'));
 									?>
-									<a href="javascript:;"><img  class="img-responsive img-thumb" src="<?php echo base_url(); ?>uploads/<?php echo $image->image; ?>" alt=""/></a>
+									<a href="javascript:;"><img  class="img-responsive img-thumb" data-url="<?php echo base_url(); ?>uploads/<?php echo $image->image; ?>" src="<?php echo base_url(); ?>uploads/<?php echo $img.'80.png'; ?>" alt=""/></a>
 									<?php
 									}
 									?>
