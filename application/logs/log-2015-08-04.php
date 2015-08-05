@@ -8398,3 +8398,1288 @@ DEBUG - 2015-08-04 12:55:35 --> File loaded: application/views/order_list.php
 DEBUG - 2015-08-04 12:55:35 --> File loaded: application/views/dashboard.php
 DEBUG - 2015-08-04 12:55:35 --> Final output sent to browser
 DEBUG - 2015-08-04 12:55:35 --> Total execution time: 0.3618
+DEBUG - 2015-08-04 22:46:40 --> Config Class Initialized
+DEBUG - 2015-08-04 22:46:40 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:46:40 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:46:40 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:46:40 --> URI Class Initialized
+DEBUG - 2015-08-04 22:46:40 --> Router Class Initialized
+DEBUG - 2015-08-04 22:46:40 --> Output Class Initialized
+DEBUG - 2015-08-04 22:46:40 --> Security Class Initialized
+DEBUG - 2015-08-04 22:46:40 --> Input Class Initialized
+DEBUG - 2015-08-04 22:46:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:46:40 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:46:40 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:46:40 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:46:40 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:46:40 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:46:40 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:46:40 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:46:40 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:46:40 --> Session Class Initialized
+DEBUG - 2015-08-04 22:46:40 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:46:40 --> Session routines successfully run
+DEBUG - 2015-08-04 22:46:40 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:46:40 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:46:40 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:46:40 --> Model Class Initialized
+DEBUG - 2015-08-04 22:46:40 --> Model Class Initialized
+DEBUG - 2015-08-04 22:46:40 --> Model Class Initialized
+DEBUG - 2015-08-04 22:46:40 --> Model Class Initialized
+DEBUG - 2015-08-04 22:46:40 --> File loaded: application/views/product_edit.php
+DEBUG - 2015-08-04 22:46:40 --> File loaded: application/views/dashboard.php
+DEBUG - 2015-08-04 22:46:40 --> Final output sent to browser
+DEBUG - 2015-08-04 22:46:40 --> Total execution time: 0.1010
+DEBUG - 2015-08-04 22:47:05 --> Config Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:47:05 --> URI Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Router Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Config Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Output Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Security Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Input Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:47:05 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:47:05 --> URI Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Config Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Router Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:47:05 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:47:05 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:47:05 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:47:05 --> Output Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> URI Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Security Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:47:05 --> Input Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:47:05 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Database Driver Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Router Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Loader Class Initialized
+ERROR - 2015-08-04 22:47:05 --> 404 Page Not Found --> assets
+DEBUG - 2015-08-04 22:47:05 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:47:05 --> Helper loaded: file_helper
+ERROR - 2015-08-04 22:47:05 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:47:05 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:47:05 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:47:05 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:47:05 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:47:05 --> Session Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:47:05 --> Session Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Session routines successfully run
+DEBUG - 2015-08-04 22:47:05 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:47:05 --> Session routines successfully run
+DEBUG - 2015-08-04 22:47:05 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Model Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Model Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Model Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Upload Class Initialized
+ERROR - 2015-08-04 22:47:05 --> Severity: Notice  --> Undefined index: userfile E:\host\perfecta\application\controllers\product.php 52
+DEBUG - 2015-08-04 22:47:05 --> Final output sent to browser
+DEBUG - 2015-08-04 22:47:05 --> Total execution time: 0.1940
+DEBUG - 2015-08-04 22:47:05 --> Model Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> File loaded: application/views/product_edit.php
+DEBUG - 2015-08-04 22:47:05 --> Config Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> File loaded: application/views/dashboard.php
+DEBUG - 2015-08-04 22:47:05 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:47:05 --> Final output sent to browser
+DEBUG - 2015-08-04 22:47:05 --> Total execution time: 0.2260
+DEBUG - 2015-08-04 22:47:05 --> URI Class Initialized
+DEBUG - 2015-08-04 22:47:05 --> Router Class Initialized
+ERROR - 2015-08-04 22:47:05 --> 404 Page Not Found --> assets
+DEBUG - 2015-08-04 22:47:14 --> Config Class Initialized
+DEBUG - 2015-08-04 22:47:14 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:47:14 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:47:14 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:47:14 --> URI Class Initialized
+DEBUG - 2015-08-04 22:47:14 --> Router Class Initialized
+DEBUG - 2015-08-04 22:47:14 --> Output Class Initialized
+DEBUG - 2015-08-04 22:47:14 --> Security Class Initialized
+DEBUG - 2015-08-04 22:47:14 --> Input Class Initialized
+DEBUG - 2015-08-04 22:47:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:47:14 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:47:14 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:47:14 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:47:14 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:47:14 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:47:14 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:47:14 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:47:14 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:47:14 --> Session Class Initialized
+DEBUG - 2015-08-04 22:47:14 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:47:14 --> Session routines successfully run
+DEBUG - 2015-08-04 22:47:14 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:47:14 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:47:14 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:47:14 --> Model Class Initialized
+DEBUG - 2015-08-04 22:47:14 --> Model Class Initialized
+DEBUG - 2015-08-04 22:47:14 --> Final output sent to browser
+DEBUG - 2015-08-04 22:47:14 --> Total execution time: 0.0820
+DEBUG - 2015-08-04 22:47:16 --> Config Class Initialized
+DEBUG - 2015-08-04 22:47:16 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:47:16 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:47:16 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:47:16 --> URI Class Initialized
+DEBUG - 2015-08-04 22:47:16 --> Router Class Initialized
+DEBUG - 2015-08-04 22:47:16 --> Output Class Initialized
+DEBUG - 2015-08-04 22:47:16 --> Security Class Initialized
+DEBUG - 2015-08-04 22:47:16 --> Input Class Initialized
+DEBUG - 2015-08-04 22:47:16 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:47:16 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:47:16 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:47:16 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:47:16 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:47:16 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:47:16 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:47:16 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:47:16 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:47:16 --> Session Class Initialized
+DEBUG - 2015-08-04 22:47:16 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:47:16 --> Session routines successfully run
+DEBUG - 2015-08-04 22:47:16 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:47:16 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:47:16 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:47:16 --> Model Class Initialized
+DEBUG - 2015-08-04 22:47:16 --> Model Class Initialized
+DEBUG - 2015-08-04 22:47:16 --> Final output sent to browser
+DEBUG - 2015-08-04 22:47:16 --> Total execution time: 0.0800
+DEBUG - 2015-08-04 22:48:33 --> Config Class Initialized
+DEBUG - 2015-08-04 22:48:33 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:48:33 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:48:33 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:48:33 --> URI Class Initialized
+DEBUG - 2015-08-04 22:48:33 --> Router Class Initialized
+DEBUG - 2015-08-04 22:48:33 --> Output Class Initialized
+DEBUG - 2015-08-04 22:48:33 --> Security Class Initialized
+DEBUG - 2015-08-04 22:48:33 --> Input Class Initialized
+DEBUG - 2015-08-04 22:48:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:48:33 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:48:33 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:48:33 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:48:33 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:48:33 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:48:33 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:48:33 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:48:33 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:48:33 --> Session Class Initialized
+DEBUG - 2015-08-04 22:48:33 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:48:33 --> Session routines successfully run
+DEBUG - 2015-08-04 22:48:33 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:48:33 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:48:33 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:48:33 --> Model Class Initialized
+DEBUG - 2015-08-04 22:48:33 --> Model Class Initialized
+DEBUG - 2015-08-04 22:48:33 --> Model Class Initialized
+DEBUG - 2015-08-04 22:48:33 --> Model Class Initialized
+DEBUG - 2015-08-04 22:48:33 --> File loaded: application/views/product_edit.php
+DEBUG - 2015-08-04 22:48:33 --> File loaded: application/views/dashboard.php
+DEBUG - 2015-08-04 22:48:33 --> Final output sent to browser
+DEBUG - 2015-08-04 22:48:33 --> Total execution time: 0.1030
+DEBUG - 2015-08-04 22:48:46 --> Config Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Config Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:48:46 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> URI Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Router Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:48:46 --> Output Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> URI Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Router Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Security Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Input Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:48:46 --> Output Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Security Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Input Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:48:46 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:48:46 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:48:46 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:48:46 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:48:46 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:48:46 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:48:46 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:48:46 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:48:46 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:48:46 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:48:46 --> Config Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Session Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:48:46 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:48:46 --> URI Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Database Driver Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Session routines successfully run
+ERROR - 2015-08-04 22:48:46 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:48:46 --> Router Class Initialized
+ERROR - 2015-08-04 22:48:46 --> 404 Page Not Found --> assets
+DEBUG - 2015-08-04 22:48:46 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Model Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Model Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Session Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Model Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:48:46 --> Session routines successfully run
+DEBUG - 2015-08-04 22:48:46 --> Model Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Upload Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> File loaded: application/views/product_edit.php
+ERROR - 2015-08-04 22:48:46 --> Severity: Notice  --> Undefined index: userfile E:\host\perfecta\application\controllers\product.php 52
+DEBUG - 2015-08-04 22:48:46 --> Final output sent to browser
+DEBUG - 2015-08-04 22:48:46 --> Total execution time: 0.1400
+DEBUG - 2015-08-04 22:48:46 --> File loaded: application/views/dashboard.php
+DEBUG - 2015-08-04 22:48:46 --> Final output sent to browser
+DEBUG - 2015-08-04 22:48:46 --> Total execution time: 0.1480
+DEBUG - 2015-08-04 22:48:46 --> Config Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:48:46 --> URI Class Initialized
+DEBUG - 2015-08-04 22:48:46 --> Router Class Initialized
+ERROR - 2015-08-04 22:48:46 --> 404 Page Not Found --> assets
+DEBUG - 2015-08-04 22:48:48 --> Config Class Initialized
+DEBUG - 2015-08-04 22:48:48 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:48:48 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:48:48 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:48:48 --> URI Class Initialized
+DEBUG - 2015-08-04 22:48:48 --> Router Class Initialized
+DEBUG - 2015-08-04 22:48:48 --> Output Class Initialized
+DEBUG - 2015-08-04 22:48:48 --> Security Class Initialized
+DEBUG - 2015-08-04 22:48:48 --> Input Class Initialized
+DEBUG - 2015-08-04 22:48:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:48:48 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:48:48 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:48:48 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:48:48 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:48:48 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:48:48 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:48:48 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:48:48 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:48:48 --> Session Class Initialized
+DEBUG - 2015-08-04 22:48:48 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:48:48 --> Session routines successfully run
+DEBUG - 2015-08-04 22:48:48 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:48:48 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:48:48 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:48:48 --> Model Class Initialized
+DEBUG - 2015-08-04 22:48:48 --> Model Class Initialized
+DEBUG - 2015-08-04 22:48:48 --> Final output sent to browser
+DEBUG - 2015-08-04 22:48:48 --> Total execution time: 0.0800
+DEBUG - 2015-08-04 22:48:49 --> Config Class Initialized
+DEBUG - 2015-08-04 22:48:49 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:48:49 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:48:49 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:48:49 --> URI Class Initialized
+DEBUG - 2015-08-04 22:48:49 --> Router Class Initialized
+DEBUG - 2015-08-04 22:48:49 --> Output Class Initialized
+DEBUG - 2015-08-04 22:48:49 --> Security Class Initialized
+DEBUG - 2015-08-04 22:48:49 --> Input Class Initialized
+DEBUG - 2015-08-04 22:48:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:48:49 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:48:49 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:48:49 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:48:49 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:48:49 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:48:49 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:48:49 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:48:49 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:48:49 --> Session Class Initialized
+DEBUG - 2015-08-04 22:48:49 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:48:49 --> Session routines successfully run
+DEBUG - 2015-08-04 22:48:49 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:48:49 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:48:49 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:48:49 --> Model Class Initialized
+DEBUG - 2015-08-04 22:48:50 --> Model Class Initialized
+DEBUG - 2015-08-04 22:48:50 --> Final output sent to browser
+DEBUG - 2015-08-04 22:48:50 --> Total execution time: 0.0800
+DEBUG - 2015-08-04 22:48:53 --> Config Class Initialized
+DEBUG - 2015-08-04 22:48:53 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:48:53 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:48:53 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:48:53 --> URI Class Initialized
+DEBUG - 2015-08-04 22:48:53 --> Router Class Initialized
+DEBUG - 2015-08-04 22:48:53 --> Output Class Initialized
+DEBUG - 2015-08-04 22:48:53 --> Security Class Initialized
+DEBUG - 2015-08-04 22:48:53 --> Input Class Initialized
+DEBUG - 2015-08-04 22:48:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:48:53 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:48:53 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:48:53 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:48:53 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:48:53 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:48:53 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:48:53 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:48:53 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:48:53 --> Session Class Initialized
+DEBUG - 2015-08-04 22:48:53 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:48:53 --> Session routines successfully run
+DEBUG - 2015-08-04 22:48:53 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:48:53 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:48:53 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:48:53 --> Model Class Initialized
+DEBUG - 2015-08-04 22:48:53 --> Model Class Initialized
+ERROR - 2015-08-04 22:48:53 --> http://localhost/perfecta/uploads/440804_366_451.jpg
+ERROR - 2015-08-04 22:48:53 --> NOT DELETED
+DEBUG - 2015-08-04 22:48:53 --> Final output sent to browser
+DEBUG - 2015-08-04 22:48:53 --> Total execution time: 0.0990
+DEBUG - 2015-08-04 22:49:05 --> Config Class Initialized
+DEBUG - 2015-08-04 22:49:05 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:49:05 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:49:05 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:49:05 --> URI Class Initialized
+DEBUG - 2015-08-04 22:49:05 --> Router Class Initialized
+DEBUG - 2015-08-04 22:49:05 --> Output Class Initialized
+DEBUG - 2015-08-04 22:49:05 --> Security Class Initialized
+DEBUG - 2015-08-04 22:49:05 --> Input Class Initialized
+DEBUG - 2015-08-04 22:49:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:49:05 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:49:05 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:49:05 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:49:05 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:49:05 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:49:05 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:49:05 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:49:05 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:49:05 --> Session Class Initialized
+DEBUG - 2015-08-04 22:49:05 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:49:05 --> Session routines successfully run
+DEBUG - 2015-08-04 22:49:05 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:49:05 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:49:05 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:49:05 --> Upload Class Initialized
+DEBUG - 2015-08-04 22:49:05 --> Model Class Initialized
+DEBUG - 2015-08-04 22:49:05 --> Model Class Initialized
+DEBUG - 2015-08-04 22:49:05 --> Image Lib Class Initialized
+DEBUG - 2015-08-04 22:49:05 --> Final output sent to browser
+DEBUG - 2015-08-04 22:49:05 --> Total execution time: 0.1500
+DEBUG - 2015-08-04 22:49:07 --> Config Class Initialized
+DEBUG - 2015-08-04 22:49:07 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:49:07 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:49:07 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:49:07 --> URI Class Initialized
+DEBUG - 2015-08-04 22:49:07 --> Router Class Initialized
+DEBUG - 2015-08-04 22:49:07 --> Output Class Initialized
+DEBUG - 2015-08-04 22:49:07 --> Security Class Initialized
+DEBUG - 2015-08-04 22:49:07 --> Input Class Initialized
+DEBUG - 2015-08-04 22:49:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:49:07 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:49:07 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:49:07 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:49:07 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:49:07 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:49:07 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:49:07 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:49:07 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:49:07 --> Session Class Initialized
+DEBUG - 2015-08-04 22:49:07 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:49:07 --> Session routines successfully run
+DEBUG - 2015-08-04 22:49:07 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:49:07 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:49:07 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:49:07 --> Model Class Initialized
+DEBUG - 2015-08-04 22:49:07 --> Model Class Initialized
+DEBUG - 2015-08-04 22:49:07 --> Model Class Initialized
+DEBUG - 2015-08-04 22:49:07 --> Model Class Initialized
+DEBUG - 2015-08-04 22:49:07 --> File loaded: application/views/product_edit.php
+DEBUG - 2015-08-04 22:49:07 --> File loaded: application/views/dashboard.php
+DEBUG - 2015-08-04 22:49:07 --> Final output sent to browser
+DEBUG - 2015-08-04 22:49:07 --> Total execution time: 0.0980
+DEBUG - 2015-08-04 22:49:18 --> Config Class Initialized
+DEBUG - 2015-08-04 22:49:18 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:49:18 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:49:18 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:49:18 --> URI Class Initialized
+DEBUG - 2015-08-04 22:49:18 --> Router Class Initialized
+DEBUG - 2015-08-04 22:49:18 --> Output Class Initialized
+DEBUG - 2015-08-04 22:49:18 --> Security Class Initialized
+DEBUG - 2015-08-04 22:49:18 --> Input Class Initialized
+DEBUG - 2015-08-04 22:49:18 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:49:18 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:49:18 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:49:18 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:49:18 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:49:18 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:49:18 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:49:18 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:49:18 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:49:18 --> Session Class Initialized
+DEBUG - 2015-08-04 22:49:18 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:49:18 --> Session routines successfully run
+DEBUG - 2015-08-04 22:49:18 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:49:18 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:49:18 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:49:18 --> Model Class Initialized
+DEBUG - 2015-08-04 22:49:18 --> Model Class Initialized
+DEBUG - 2015-08-04 22:49:18 --> Model Class Initialized
+DEBUG - 2015-08-04 22:49:18 --> File loaded: application/views/header.php
+DEBUG - 2015-08-04 22:49:18 --> File loaded: application/views/footer.php
+DEBUG - 2015-08-04 22:49:18 --> File loaded: application/views/work_clothing.php
+DEBUG - 2015-08-04 22:49:18 --> Final output sent to browser
+DEBUG - 2015-08-04 22:49:18 --> Total execution time: 0.1140
+DEBUG - 2015-08-04 22:49:31 --> Config Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Config Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:49:31 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> URI Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:49:31 --> Router Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> URI Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Router Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Output Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Output Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Security Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Security Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Input Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Input Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:49:31 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:49:31 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:49:31 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:49:31 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:49:31 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:49:31 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:49:31 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:49:31 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:49:31 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:49:31 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:49:31 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:49:31 --> Database Driver Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Session Class Initialized
+ERROR - 2015-08-04 22:49:31 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:49:31 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:49:31 --> Session routines successfully run
+DEBUG - 2015-08-04 22:49:31 --> Session Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:49:31 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Session routines successfully run
+DEBUG - 2015-08-04 22:49:31 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Upload Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> XML-RPC Class Initialized
+ERROR - 2015-08-04 22:49:31 --> Severity: Notice  --> Undefined index: userfile E:\host\perfecta\application\controllers\product.php 52
+DEBUG - 2015-08-04 22:49:31 --> Final output sent to browser
+DEBUG - 2015-08-04 22:49:31 --> Total execution time: 0.1090
+DEBUG - 2015-08-04 22:49:31 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Model Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Model Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Model Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Model Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> File loaded: application/views/product_edit.php
+DEBUG - 2015-08-04 22:49:31 --> File loaded: application/views/dashboard.php
+DEBUG - 2015-08-04 22:49:31 --> Final output sent to browser
+DEBUG - 2015-08-04 22:49:31 --> Total execution time: 0.1580
+DEBUG - 2015-08-04 22:49:31 --> Config Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:49:31 --> URI Class Initialized
+DEBUG - 2015-08-04 22:49:31 --> Router Class Initialized
+ERROR - 2015-08-04 22:49:31 --> 404 Page Not Found --> assets
+DEBUG - 2015-08-04 22:49:32 --> Config Class Initialized
+DEBUG - 2015-08-04 22:49:32 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:49:32 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:49:32 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:49:32 --> URI Class Initialized
+DEBUG - 2015-08-04 22:49:32 --> Router Class Initialized
+ERROR - 2015-08-04 22:49:32 --> 404 Page Not Found --> assets
+DEBUG - 2015-08-04 22:51:06 --> Config Class Initialized
+DEBUG - 2015-08-04 22:51:06 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:51:06 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:51:06 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:51:06 --> URI Class Initialized
+DEBUG - 2015-08-04 22:51:06 --> Router Class Initialized
+DEBUG - 2015-08-04 22:51:06 --> Output Class Initialized
+DEBUG - 2015-08-04 22:51:06 --> Security Class Initialized
+DEBUG - 2015-08-04 22:51:06 --> Input Class Initialized
+DEBUG - 2015-08-04 22:51:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:51:06 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:51:06 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:51:06 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:51:06 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:51:06 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:51:06 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:51:06 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:51:06 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:51:06 --> Session Class Initialized
+DEBUG - 2015-08-04 22:51:06 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:51:06 --> Session routines successfully run
+DEBUG - 2015-08-04 22:51:06 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:51:06 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:51:06 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:51:06 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:06 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:06 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:06 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:06 --> File loaded: application/views/product_edit.php
+DEBUG - 2015-08-04 22:51:06 --> File loaded: application/views/dashboard.php
+DEBUG - 2015-08-04 22:51:06 --> Final output sent to browser
+DEBUG - 2015-08-04 22:51:06 --> Total execution time: 0.0800
+DEBUG - 2015-08-04 22:51:09 --> Config Class Initialized
+DEBUG - 2015-08-04 22:51:09 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:51:09 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:51:09 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:51:09 --> URI Class Initialized
+DEBUG - 2015-08-04 22:51:09 --> Router Class Initialized
+DEBUG - 2015-08-04 22:51:09 --> Output Class Initialized
+DEBUG - 2015-08-04 22:51:09 --> Security Class Initialized
+DEBUG - 2015-08-04 22:51:09 --> Input Class Initialized
+DEBUG - 2015-08-04 22:51:09 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:51:09 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:51:09 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:51:09 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:51:09 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:51:09 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:51:09 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:51:09 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:51:09 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:51:09 --> Session Class Initialized
+DEBUG - 2015-08-04 22:51:09 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:51:09 --> Session routines successfully run
+DEBUG - 2015-08-04 22:51:09 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:51:09 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:51:09 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:51:09 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:09 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:09 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:09 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:09 --> File loaded: application/views/product_edit.php
+DEBUG - 2015-08-04 22:51:09 --> File loaded: application/views/dashboard.php
+DEBUG - 2015-08-04 22:51:09 --> Final output sent to browser
+DEBUG - 2015-08-04 22:51:09 --> Total execution time: 0.0890
+DEBUG - 2015-08-04 22:51:21 --> Config Class Initialized
+DEBUG - 2015-08-04 22:51:21 --> Config Class Initialized
+DEBUG - 2015-08-04 22:51:21 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:51:21 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:51:21 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:51:21 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:51:21 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:51:21 --> URI Class Initialized
+DEBUG - 2015-08-04 22:51:21 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:51:21 --> Router Class Initialized
+DEBUG - 2015-08-04 22:51:21 --> URI Class Initialized
+DEBUG - 2015-08-04 22:51:21 --> Router Class Initialized
+DEBUG - 2015-08-04 22:51:21 --> Output Class Initialized
+DEBUG - 2015-08-04 22:51:21 --> Security Class Initialized
+DEBUG - 2015-08-04 22:51:21 --> Output Class Initialized
+DEBUG - 2015-08-04 22:51:21 --> Input Class Initialized
+DEBUG - 2015-08-04 22:51:21 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:51:21 --> Security Class Initialized
+DEBUG - 2015-08-04 22:51:21 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:51:21 --> Input Class Initialized
+DEBUG - 2015-08-04 22:51:21 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:51:21 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:51:21 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:51:21 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:51:21 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:51:21 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:51:21 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:51:21 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:51:21 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:51:21 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:51:21 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:51:21 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:51:21 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:51:21 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:51:22 --> Database Driver Class Initialized
+DEBUG - 2015-08-04 22:51:22 --> Session Class Initialized
+DEBUG - 2015-08-04 22:51:22 --> Config Class Initialized
+DEBUG - 2015-08-04 22:51:22 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:51:22 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:51:22 --> Session routines successfully run
+DEBUG - 2015-08-04 22:51:22 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:51:22 --> UTF-8 Support Enabled
+ERROR - 2015-08-04 22:51:22 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:51:22 --> URI Class Initialized
+DEBUG - 2015-08-04 22:51:22 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:51:22 --> Router Class Initialized
+DEBUG - 2015-08-04 22:51:22 --> Session Class Initialized
+DEBUG - 2015-08-04 22:51:22 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:51:22 --> Helper loaded: string_helper
+ERROR - 2015-08-04 22:51:22 --> 404 Page Not Found --> assets
+DEBUG - 2015-08-04 22:51:22 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:51:22 --> Session routines successfully run
+DEBUG - 2015-08-04 22:51:22 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:22 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:51:22 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:22 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:22 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:51:22 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:51:22 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:22 --> Upload Class Initialized
+ERROR - 2015-08-04 22:51:22 --> Severity: Notice  --> Undefined index: userfile E:\host\perfecta\application\controllers\product.php 52
+DEBUG - 2015-08-04 22:51:22 --> Final output sent to browser
+DEBUG - 2015-08-04 22:51:22 --> Total execution time: 0.1100
+DEBUG - 2015-08-04 22:51:22 --> File loaded: application/views/product_edit.php
+DEBUG - 2015-08-04 22:51:22 --> File loaded: application/views/dashboard.php
+DEBUG - 2015-08-04 22:51:22 --> Final output sent to browser
+DEBUG - 2015-08-04 22:51:22 --> Total execution time: 0.1230
+DEBUG - 2015-08-04 22:51:22 --> Config Class Initialized
+DEBUG - 2015-08-04 22:51:22 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:51:22 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:51:22 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:51:22 --> URI Class Initialized
+DEBUG - 2015-08-04 22:51:22 --> Router Class Initialized
+ERROR - 2015-08-04 22:51:22 --> 404 Page Not Found --> assets
+DEBUG - 2015-08-04 22:51:26 --> Config Class Initialized
+DEBUG - 2015-08-04 22:51:26 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:51:26 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:51:26 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:51:26 --> URI Class Initialized
+DEBUG - 2015-08-04 22:51:26 --> Router Class Initialized
+DEBUG - 2015-08-04 22:51:26 --> Output Class Initialized
+DEBUG - 2015-08-04 22:51:26 --> Security Class Initialized
+DEBUG - 2015-08-04 22:51:26 --> Input Class Initialized
+DEBUG - 2015-08-04 22:51:26 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:51:26 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:51:26 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:51:26 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:51:26 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:51:26 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:51:26 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:51:26 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:51:26 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:51:26 --> Session Class Initialized
+DEBUG - 2015-08-04 22:51:26 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:51:26 --> Session routines successfully run
+DEBUG - 2015-08-04 22:51:26 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:51:26 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:51:26 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:51:26 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:26 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:26 --> Final output sent to browser
+DEBUG - 2015-08-04 22:51:26 --> Total execution time: 0.0970
+DEBUG - 2015-08-04 22:51:28 --> Config Class Initialized
+DEBUG - 2015-08-04 22:51:28 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:51:28 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:51:28 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:51:28 --> URI Class Initialized
+DEBUG - 2015-08-04 22:51:28 --> Router Class Initialized
+DEBUG - 2015-08-04 22:51:28 --> Output Class Initialized
+DEBUG - 2015-08-04 22:51:28 --> Security Class Initialized
+DEBUG - 2015-08-04 22:51:28 --> Input Class Initialized
+DEBUG - 2015-08-04 22:51:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:51:28 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:51:28 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:51:28 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:51:28 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:51:28 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:51:28 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:51:28 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:51:28 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:51:28 --> Session Class Initialized
+DEBUG - 2015-08-04 22:51:28 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:51:28 --> Session routines successfully run
+DEBUG - 2015-08-04 22:51:28 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:51:28 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:51:28 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:51:28 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:28 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:28 --> Final output sent to browser
+DEBUG - 2015-08-04 22:51:28 --> Total execution time: 0.1080
+DEBUG - 2015-08-04 22:51:32 --> Config Class Initialized
+DEBUG - 2015-08-04 22:51:32 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:51:32 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:51:32 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:51:32 --> URI Class Initialized
+DEBUG - 2015-08-04 22:51:32 --> Router Class Initialized
+DEBUG - 2015-08-04 22:51:32 --> Output Class Initialized
+DEBUG - 2015-08-04 22:51:32 --> Security Class Initialized
+DEBUG - 2015-08-04 22:51:32 --> Input Class Initialized
+DEBUG - 2015-08-04 22:51:32 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:51:32 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:51:32 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:51:32 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:51:32 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:51:32 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:51:32 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:51:32 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:51:32 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:51:32 --> Session Class Initialized
+DEBUG - 2015-08-04 22:51:32 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:51:32 --> Session routines successfully run
+DEBUG - 2015-08-04 22:51:32 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:51:32 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:51:32 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:51:32 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:32 --> Model Class Initialized
+ERROR - 2015-08-04 22:51:32 --> http://localhost/perfecta/uploads/440804_366_lt2.jpg
+ERROR - 2015-08-04 22:51:32 --> NOT DELETED
+DEBUG - 2015-08-04 22:51:32 --> Final output sent to browser
+DEBUG - 2015-08-04 22:51:32 --> Total execution time: 0.1040
+DEBUG - 2015-08-04 22:51:39 --> Config Class Initialized
+DEBUG - 2015-08-04 22:51:39 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:51:39 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:51:39 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:51:39 --> URI Class Initialized
+DEBUG - 2015-08-04 22:51:39 --> Router Class Initialized
+DEBUG - 2015-08-04 22:51:39 --> Output Class Initialized
+DEBUG - 2015-08-04 22:51:39 --> Security Class Initialized
+DEBUG - 2015-08-04 22:51:39 --> Input Class Initialized
+DEBUG - 2015-08-04 22:51:39 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:51:39 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:51:39 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:51:39 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:51:39 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:51:39 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:51:39 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:51:39 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:51:39 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:51:39 --> Session Class Initialized
+DEBUG - 2015-08-04 22:51:39 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:51:39 --> Session routines successfully run
+DEBUG - 2015-08-04 22:51:39 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:51:39 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:51:39 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:51:39 --> Upload Class Initialized
+DEBUG - 2015-08-04 22:51:39 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:39 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:39 --> Image Lib Class Initialized
+DEBUG - 2015-08-04 22:51:39 --> Final output sent to browser
+DEBUG - 2015-08-04 22:51:39 --> Total execution time: 0.1370
+DEBUG - 2015-08-04 22:51:41 --> Config Class Initialized
+DEBUG - 2015-08-04 22:51:41 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:51:41 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:51:41 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:51:41 --> URI Class Initialized
+DEBUG - 2015-08-04 22:51:41 --> Router Class Initialized
+DEBUG - 2015-08-04 22:51:41 --> Output Class Initialized
+DEBUG - 2015-08-04 22:51:41 --> Security Class Initialized
+DEBUG - 2015-08-04 22:51:41 --> Input Class Initialized
+DEBUG - 2015-08-04 22:51:41 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:51:41 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:51:41 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:51:41 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:51:41 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:51:41 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:51:41 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:51:41 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:51:41 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:51:41 --> Session Class Initialized
+DEBUG - 2015-08-04 22:51:41 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:51:41 --> Session routines successfully run
+DEBUG - 2015-08-04 22:51:41 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:51:41 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:51:41 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:51:41 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:41 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:41 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:41 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:41 --> File loaded: application/views/product_edit.php
+DEBUG - 2015-08-04 22:51:41 --> File loaded: application/views/dashboard.php
+DEBUG - 2015-08-04 22:51:41 --> Final output sent to browser
+DEBUG - 2015-08-04 22:51:41 --> Total execution time: 0.0930
+DEBUG - 2015-08-04 22:51:55 --> Config Class Initialized
+DEBUG - 2015-08-04 22:51:55 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:51:55 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:51:55 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:51:55 --> URI Class Initialized
+DEBUG - 2015-08-04 22:51:55 --> Router Class Initialized
+DEBUG - 2015-08-04 22:51:55 --> Output Class Initialized
+DEBUG - 2015-08-04 22:51:55 --> Security Class Initialized
+DEBUG - 2015-08-04 22:51:55 --> Input Class Initialized
+DEBUG - 2015-08-04 22:51:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:51:55 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:51:55 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:51:55 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:51:55 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:51:55 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:51:55 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:51:55 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:51:55 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:51:55 --> Session Class Initialized
+DEBUG - 2015-08-04 22:51:55 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:51:55 --> Session routines successfully run
+DEBUG - 2015-08-04 22:51:55 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:51:55 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:51:55 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:51:55 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:55 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:55 --> Model Class Initialized
+DEBUG - 2015-08-04 22:51:55 --> File loaded: application/views/header.php
+DEBUG - 2015-08-04 22:51:55 --> File loaded: application/views/footer.php
+DEBUG - 2015-08-04 22:51:55 --> File loaded: application/views/work_clothing.php
+DEBUG - 2015-08-04 22:51:55 --> Final output sent to browser
+DEBUG - 2015-08-04 22:51:55 --> Total execution time: 0.1040
+DEBUG - 2015-08-04 22:52:06 --> Config Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:52:06 --> URI Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Router Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Config Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Output Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:52:06 --> Security Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> URI Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Input Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Router Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:52:06 --> Output Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Security Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Input Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:52:06 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:52:06 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:52:06 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:52:06 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:52:06 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:52:06 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:52:06 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:52:06 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:52:06 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:52:06 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:52:06 --> Database Driver Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Session Class Initialized
+ERROR - 2015-08-04 22:52:06 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:52:06 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:52:06 --> Session routines successfully run
+DEBUG - 2015-08-04 22:52:06 --> Session Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:52:06 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Session routines successfully run
+DEBUG - 2015-08-04 22:52:06 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Model Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Model Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Model Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Model Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Upload Class Initialized
+ERROR - 2015-08-04 22:52:06 --> Severity: Notice  --> Undefined index: userfile E:\host\perfecta\application\controllers\product.php 52
+DEBUG - 2015-08-04 22:52:06 --> Final output sent to browser
+DEBUG - 2015-08-04 22:52:06 --> Total execution time: 0.1120
+DEBUG - 2015-08-04 22:52:06 --> File loaded: application/views/product_edit.php
+DEBUG - 2015-08-04 22:52:06 --> File loaded: application/views/dashboard.php
+DEBUG - 2015-08-04 22:52:06 --> Final output sent to browser
+DEBUG - 2015-08-04 22:52:06 --> Total execution time: 0.1390
+DEBUG - 2015-08-04 22:52:06 --> Config Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:52:06 --> URI Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Router Class Initialized
+ERROR - 2015-08-04 22:52:06 --> 404 Page Not Found --> assets
+DEBUG - 2015-08-04 22:52:06 --> Config Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:52:06 --> URI Class Initialized
+DEBUG - 2015-08-04 22:52:06 --> Router Class Initialized
+ERROR - 2015-08-04 22:52:06 --> 404 Page Not Found --> assets
+DEBUG - 2015-08-04 22:54:10 --> Config Class Initialized
+DEBUG - 2015-08-04 22:54:10 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:54:10 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:54:10 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:54:10 --> URI Class Initialized
+DEBUG - 2015-08-04 22:54:10 --> Router Class Initialized
+DEBUG - 2015-08-04 22:54:10 --> Output Class Initialized
+DEBUG - 2015-08-04 22:54:10 --> Security Class Initialized
+DEBUG - 2015-08-04 22:54:10 --> Input Class Initialized
+DEBUG - 2015-08-04 22:54:10 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:54:10 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:54:10 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:54:10 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:54:10 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:54:10 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:54:10 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:54:10 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:54:10 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:54:10 --> Session Class Initialized
+DEBUG - 2015-08-04 22:54:10 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:54:10 --> Session routines successfully run
+DEBUG - 2015-08-04 22:54:10 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:54:10 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:54:10 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:54:10 --> Model Class Initialized
+DEBUG - 2015-08-04 22:54:10 --> Model Class Initialized
+DEBUG - 2015-08-04 22:54:10 --> Model Class Initialized
+DEBUG - 2015-08-04 22:54:10 --> Model Class Initialized
+DEBUG - 2015-08-04 22:54:10 --> File loaded: application/views/product_edit.php
+DEBUG - 2015-08-04 22:54:10 --> File loaded: application/views/dashboard.php
+DEBUG - 2015-08-04 22:54:10 --> Final output sent to browser
+DEBUG - 2015-08-04 22:54:10 --> Total execution time: 0.0880
+DEBUG - 2015-08-04 22:54:35 --> Config Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Config Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:54:35 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> URI Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:54:35 --> Router Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> URI Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Router Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Output Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Security Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Output Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Input Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Security Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:54:35 --> Input Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:54:35 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:54:35 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:54:35 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:54:35 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:54:35 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:54:35 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:54:35 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:54:35 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:54:35 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:54:35 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:54:35 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:54:35 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:54:35 --> Session Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:54:35 --> Session Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Session routines successfully run
+DEBUG - 2015-08-04 22:54:35 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:54:35 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Session routines successfully run
+DEBUG - 2015-08-04 22:54:35 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Model Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Model Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Model Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Upload Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Model Class Initialized
+ERROR - 2015-08-04 22:54:35 --> Severity: Notice  --> Undefined index: userfile E:\host\perfecta\application\controllers\product.php 52
+DEBUG - 2015-08-04 22:54:35 --> Final output sent to browser
+DEBUG - 2015-08-04 22:54:35 --> Total execution time: 0.0830
+DEBUG - 2015-08-04 22:54:35 --> Config Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:54:35 --> URI Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Router Class Initialized
+ERROR - 2015-08-04 22:54:35 --> 404 Page Not Found --> assets
+DEBUG - 2015-08-04 22:54:35 --> File loaded: application/views/product_edit.php
+DEBUG - 2015-08-04 22:54:35 --> File loaded: application/views/dashboard.php
+DEBUG - 2015-08-04 22:54:35 --> Final output sent to browser
+DEBUG - 2015-08-04 22:54:35 --> Total execution time: 0.1130
+DEBUG - 2015-08-04 22:54:35 --> Config Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:54:35 --> URI Class Initialized
+DEBUG - 2015-08-04 22:54:35 --> Router Class Initialized
+ERROR - 2015-08-04 22:54:35 --> 404 Page Not Found --> assets
+DEBUG - 2015-08-04 22:54:37 --> Config Class Initialized
+DEBUG - 2015-08-04 22:54:37 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:54:37 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:54:37 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:54:37 --> URI Class Initialized
+DEBUG - 2015-08-04 22:54:37 --> Router Class Initialized
+DEBUG - 2015-08-04 22:54:37 --> Output Class Initialized
+DEBUG - 2015-08-04 22:54:37 --> Security Class Initialized
+DEBUG - 2015-08-04 22:54:37 --> Input Class Initialized
+DEBUG - 2015-08-04 22:54:37 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:54:37 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:54:37 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:54:37 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:54:37 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:54:37 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:54:37 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:54:37 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:54:37 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:54:37 --> Session Class Initialized
+DEBUG - 2015-08-04 22:54:37 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:54:37 --> Session routines successfully run
+DEBUG - 2015-08-04 22:54:37 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:54:38 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:54:38 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:54:38 --> Model Class Initialized
+DEBUG - 2015-08-04 22:54:38 --> Model Class Initialized
+DEBUG - 2015-08-04 22:54:38 --> Final output sent to browser
+DEBUG - 2015-08-04 22:54:38 --> Total execution time: 0.0800
+DEBUG - 2015-08-04 22:54:39 --> Config Class Initialized
+DEBUG - 2015-08-04 22:54:39 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:54:39 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:54:39 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:54:39 --> URI Class Initialized
+DEBUG - 2015-08-04 22:54:39 --> Router Class Initialized
+DEBUG - 2015-08-04 22:54:39 --> Output Class Initialized
+DEBUG - 2015-08-04 22:54:39 --> Security Class Initialized
+DEBUG - 2015-08-04 22:54:39 --> Input Class Initialized
+DEBUG - 2015-08-04 22:54:39 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:54:39 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:54:39 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:54:39 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:54:39 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:54:39 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:54:39 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:54:39 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:54:39 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:54:39 --> Session Class Initialized
+DEBUG - 2015-08-04 22:54:39 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:54:39 --> Session routines successfully run
+DEBUG - 2015-08-04 22:54:39 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:54:39 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:54:39 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:54:39 --> Model Class Initialized
+DEBUG - 2015-08-04 22:54:39 --> Model Class Initialized
+DEBUG - 2015-08-04 22:54:39 --> Final output sent to browser
+DEBUG - 2015-08-04 22:54:39 --> Total execution time: 0.0780
+DEBUG - 2015-08-04 22:54:43 --> Config Class Initialized
+DEBUG - 2015-08-04 22:54:43 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:54:43 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:54:43 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:54:43 --> URI Class Initialized
+DEBUG - 2015-08-04 22:54:43 --> Router Class Initialized
+DEBUG - 2015-08-04 22:54:43 --> Output Class Initialized
+DEBUG - 2015-08-04 22:54:43 --> Security Class Initialized
+DEBUG - 2015-08-04 22:54:43 --> Input Class Initialized
+DEBUG - 2015-08-04 22:54:43 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:54:43 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:54:43 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:54:43 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:54:43 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:54:43 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:54:43 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:54:43 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:54:43 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:54:43 --> Session Class Initialized
+DEBUG - 2015-08-04 22:54:43 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:54:43 --> Session routines successfully run
+DEBUG - 2015-08-04 22:54:43 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:54:43 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:54:43 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:54:43 --> Model Class Initialized
+DEBUG - 2015-08-04 22:54:43 --> Model Class Initialized
+ERROR - 2015-08-04 22:54:43 --> http://localhost/perfecta/uploads/440804_366_sl2.jpg
+ERROR - 2015-08-04 22:54:43 --> NOT DELETED
+DEBUG - 2015-08-04 22:54:43 --> Final output sent to browser
+DEBUG - 2015-08-04 22:54:43 --> Total execution time: 0.0720
+DEBUG - 2015-08-04 22:54:50 --> Config Class Initialized
+DEBUG - 2015-08-04 22:54:50 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:54:50 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:54:50 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:54:50 --> URI Class Initialized
+DEBUG - 2015-08-04 22:54:50 --> Router Class Initialized
+DEBUG - 2015-08-04 22:54:50 --> Output Class Initialized
+DEBUG - 2015-08-04 22:54:50 --> Security Class Initialized
+DEBUG - 2015-08-04 22:54:50 --> Input Class Initialized
+DEBUG - 2015-08-04 22:54:50 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:54:50 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:54:50 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:54:50 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:54:50 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:54:50 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:54:50 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:54:50 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:54:50 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:54:50 --> Session Class Initialized
+DEBUG - 2015-08-04 22:54:50 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:54:50 --> Session routines successfully run
+DEBUG - 2015-08-04 22:54:50 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:54:50 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:54:50 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:54:50 --> Upload Class Initialized
+DEBUG - 2015-08-04 22:54:50 --> Model Class Initialized
+DEBUG - 2015-08-04 22:54:50 --> Model Class Initialized
+DEBUG - 2015-08-04 22:54:50 --> Image Lib Class Initialized
+DEBUG - 2015-08-04 22:54:50 --> Language file loaded: language/english/imglib_lang.php
+ERROR - 2015-08-04 22:54:50 --> The path to your image library is not correct.  Please set the correct path in your image preferences.
+ERROR - 2015-08-04 22:54:50 --> The path to the image is not correct.
+ERROR - 2015-08-04 22:54:50 --> The path to your image library is not correct.  Please set the correct path in your image preferences.
+DEBUG - 2015-08-04 22:54:50 --> Final output sent to browser
+DEBUG - 2015-08-04 22:54:50 --> Total execution time: 0.0930
+DEBUG - 2015-08-04 22:54:52 --> Config Class Initialized
+DEBUG - 2015-08-04 22:54:52 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:54:52 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:54:52 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:54:52 --> URI Class Initialized
+DEBUG - 2015-08-04 22:54:52 --> Router Class Initialized
+DEBUG - 2015-08-04 22:54:52 --> Output Class Initialized
+DEBUG - 2015-08-04 22:54:52 --> Security Class Initialized
+DEBUG - 2015-08-04 22:54:52 --> Input Class Initialized
+DEBUG - 2015-08-04 22:54:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:54:52 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:54:52 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:54:52 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:54:52 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:54:52 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:54:52 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:54:52 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:54:52 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:54:52 --> Session Class Initialized
+DEBUG - 2015-08-04 22:54:52 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:54:52 --> Session routines successfully run
+DEBUG - 2015-08-04 22:54:52 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:54:52 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:54:52 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:54:52 --> Model Class Initialized
+DEBUG - 2015-08-04 22:54:52 --> Model Class Initialized
+DEBUG - 2015-08-04 22:54:52 --> Model Class Initialized
+DEBUG - 2015-08-04 22:54:52 --> Model Class Initialized
+DEBUG - 2015-08-04 22:54:52 --> File loaded: application/views/product_edit.php
+DEBUG - 2015-08-04 22:54:52 --> File loaded: application/views/dashboard.php
+DEBUG - 2015-08-04 22:54:52 --> Final output sent to browser
+DEBUG - 2015-08-04 22:54:52 --> Total execution time: 0.0920
+DEBUG - 2015-08-04 22:55:07 --> Config Class Initialized
+DEBUG - 2015-08-04 22:55:07 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:55:07 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:55:07 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:55:07 --> URI Class Initialized
+DEBUG - 2015-08-04 22:55:07 --> Router Class Initialized
+DEBUG - 2015-08-04 22:55:07 --> Output Class Initialized
+DEBUG - 2015-08-04 22:55:07 --> Security Class Initialized
+DEBUG - 2015-08-04 22:55:07 --> Input Class Initialized
+DEBUG - 2015-08-04 22:55:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:55:07 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:55:07 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:55:07 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:55:07 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:55:07 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:55:07 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:55:07 --> Database Driver Class Initialized
+ERROR - 2015-08-04 22:55:07 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:55:07 --> Session Class Initialized
+DEBUG - 2015-08-04 22:55:07 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:55:07 --> Session routines successfully run
+DEBUG - 2015-08-04 22:55:07 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:55:07 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:55:07 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:55:07 --> Model Class Initialized
+DEBUG - 2015-08-04 22:55:07 --> Model Class Initialized
+DEBUG - 2015-08-04 22:55:07 --> Model Class Initialized
+DEBUG - 2015-08-04 22:55:07 --> File loaded: application/views/header.php
+DEBUG - 2015-08-04 22:55:07 --> File loaded: application/views/footer.php
+DEBUG - 2015-08-04 22:55:07 --> File loaded: application/views/work_clothing.php
+DEBUG - 2015-08-04 22:55:07 --> Final output sent to browser
+DEBUG - 2015-08-04 22:55:07 --> Total execution time: 0.0930
+DEBUG - 2015-08-04 22:55:07 --> Config Class Initialized
+DEBUG - 2015-08-04 22:55:07 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:55:07 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:55:07 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:55:07 --> URI Class Initialized
+DEBUG - 2015-08-04 22:55:07 --> Router Class Initialized
+ERROR - 2015-08-04 22:55:07 --> 404 Page Not Found --> uploads
+DEBUG - 2015-08-04 22:55:16 --> Config Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Config Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:55:16 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> URI Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:55:16 --> URI Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Router Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Router Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Output Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Security Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Output Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Security Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Input Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:55:16 --> Input Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-08-04 22:55:16 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Language_Identifier Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Loader Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:55:16 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:55:16 --> Helper loaded: url_helper
+DEBUG - 2015-08-04 22:55:16 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:55:16 --> Helper loaded: file_helper
+DEBUG - 2015-08-04 22:55:16 --> Helper loaded: text_helper
+DEBUG - 2015-08-04 22:55:16 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:55:16 --> Language file loaded: language/english/site_lang.php
+DEBUG - 2015-08-04 22:55:16 --> Database Driver Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Config Class Initialized
+ERROR - 2015-08-04 22:55:16 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:55:16 --> Database Driver Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Hooks Class Initialized
+ERROR - 2015-08-04 22:55:16 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\host\perfecta\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2015-08-04 22:55:16 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:55:16 --> Session Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> URI Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Session Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:55:16 --> Router Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Helper loaded: string_helper
+DEBUG - 2015-08-04 22:55:16 --> Session routines successfully run
+DEBUG - 2015-08-04 22:55:16 --> Session routines successfully run
+ERROR - 2015-08-04 22:55:16 --> 404 Page Not Found --> assets
+DEBUG - 2015-08-04 22:55:16 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> XML-RPC Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Pagination Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Controller Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Model Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Model Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Upload Class Initialized
+DEBUG - 2015-08-04 22:55:16 --> Model Class Initialized
+ERROR - 2015-08-04 22:55:16 --> Severity: Notice  --> Undefined index: userfile E:\host\perfecta\application\controllers\product.php 52
+DEBUG - 2015-08-04 22:55:16 --> Final output sent to browser
+DEBUG - 2015-08-04 22:55:16 --> Total execution time: 0.1220
+DEBUG - 2015-08-04 22:55:16 --> Model Class Initialized
+DEBUG - 2015-08-04 22:55:17 --> File loaded: application/views/product_edit.php
+DEBUG - 2015-08-04 22:55:17 --> File loaded: application/views/dashboard.php
+DEBUG - 2015-08-04 22:55:17 --> Final output sent to browser
+DEBUG - 2015-08-04 22:55:17 --> Total execution time: 0.1500
+DEBUG - 2015-08-04 22:55:17 --> Config Class Initialized
+DEBUG - 2015-08-04 22:55:17 --> Hooks Class Initialized
+DEBUG - 2015-08-04 22:55:17 --> Utf8 Class Initialized
+DEBUG - 2015-08-04 22:55:17 --> UTF-8 Support Enabled
+DEBUG - 2015-08-04 22:55:17 --> URI Class Initialized
+DEBUG - 2015-08-04 22:55:17 --> Router Class Initialized
+ERROR - 2015-08-04 22:55:17 --> 404 Page Not Found --> assets

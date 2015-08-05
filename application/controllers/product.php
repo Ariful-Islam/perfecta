@@ -133,6 +133,45 @@ class Product extends CI_Controller {
 		$this->image_lib->clear();
 		$this->image_lib->initialize($config);
 		$this->image_lib->crop();
+		
+		
+		
+		// for thumbnail
+		$w_orig = $upload_data['image_width'];
+		$h_orig = $upload_data['image_height'];
+		$w_thumb = 80;
+		$h_thumb = ( $h_orig * 80 ) / $w_orig;
+		$y_thumb = 0;
+		$x_thumb = 0;
+		if ($h_thumb > 60) {
+			$y_thumb = ($h_thumb - 60) / 2;
+		} else {
+			$h_thumb = 60;
+			$w_thumb = ($w_orig * 60) / $h_orig;
+			$x_thumb = ($w_thumb - 80) / 2;
+		}
+		
+		$config = array(
+			'source_image' => $upload_data['full_path'],
+			'new_image' => $upload_data["file_path"].$upload_data["raw_name"].'80.png',
+			'maintain_ratio' => TRUE,
+			'width' => $w_thumb,
+			'height' => $h_thumb
+		);
+		//$this->load->library('image_lib', $config);
+		$this->image_lib->clear();
+		$this->image_lib->resize();
+		$config = array(
+			'source_image' => $upload_data["file_path"].$upload_data["raw_name"].'80.png',
+			'maintain_ratio' => FALSE,
+			'width' => 80,
+			'height' => 60,
+			'x_axis' => $x_thumb,
+			'y_axis' => $y_thumb
+		);
+		$this->image_lib->clear();
+		$this->image_lib->initialize($config);
+		$this->image_lib->crop();
 	}
 	
 	public function product_entry()
